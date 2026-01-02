@@ -13,9 +13,9 @@
     }
 
     body.light {
-      --bg-light: #f8f9fa;
-      --text-dark: #212529;
-      --card-bg: white;
+      --bg-light: #ffffff;
+      --text-dark: #000000;
+      --card-bg: #ffffff;
       --header-bg: var(--primary);
       --input-bg: #f4f4f4;
       --table-head-bg: #f0f0f0;
@@ -36,8 +36,8 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
+      font-size: 12pt;
+      line-height: 1.5;
       background: var(--bg-light);
       padding: 20px;
       color: var(--text-dark);
@@ -45,9 +45,9 @@
     }
 
     h1, h2, h3 { color: var(--primary); margin-bottom: 10px; }
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
-    h3 { font-size: 1.2rem; }
+    h1 { font-size: 24pt; }
+    h2 { font-size: 18pt; }
+    h3 { font-size: 14pt; }
 
     .header, .footer {
       background-color: var(--header-bg);
@@ -62,35 +62,35 @@
 
     .card {
       background: var(--card-bg);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-      transition: background 0.2s ease, transform 0.2s ease;
+      padding: 10px;
+      border-radius: 0;
+      box-shadow: none;
+      margin-bottom: 10px;
+      transition: none;
     }
-    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); transform: translateY(-2px); }
+    .card:hover { box-shadow: none; transform: none; }
 
     .lab-section {
       display: none;
       background: var(--card-bg);
-      border-left: 5px solid var(--primary);
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      padding: 20px;
-      margin-bottom: 30px;
-      animation: fadeIn 0.4s ease;
-      transition: background 0.3s ease;
+      border-left: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 10px;
+      margin-bottom: 10px;
+      animation: none;
+      transition: none;
     }
     .lab-section.active { display: block; }
 
     @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-    .styled-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 1rem; background-color: var(--card-bg); color: var(--text-dark); }
+    .styled-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 12pt; background-color: var(--card-bg); color: var(--text-dark); }
     .styled-table th, .styled-table td { border: 1px solid var(--gray-border); padding: 10px; vertical-align: top; text-align: left; }
     .styled-table thead th { background-color: var(--table-head-bg); }
     .styled-table tbody tr:nth-child(even) { background-color: var(--table-alt-row-bg); }
 
-    img { display: block; margin-top: 10px; max-width: 80%; height: auto; border: 1px solid var(--image-border); border-radius: 4px; }
+    img { display: block; margin-top: 10px; max-width: 40%; height: auto; border: 1px solid var(--image-border); border-radius: 4px; }
 
     .filter-bar { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 
