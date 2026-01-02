@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTM251: Agile Project Management Fundamentals – Lab 1</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #005ea2;
+      --accent: #cce5ff;
+      --gray-border: #dee2e6;
+    }
+
+    body.light {
+      --bg-light: #f8f9fa;
+      --text-dark: #212529;
+      --card-bg: white;
+      --header-bg: var(--primary);
+      --input-bg: #f4f4f4;
+      --table-head-bg: #f0f0f0;
+      --table-alt-row-bg: #f9f9f9;
+      --image-border: #ccc;
+    }
+
+    body.dark {
+      --bg-light: #1c1e21;
+      --text-dark: #e9ecef;
+      --card-bg: #2c2f33;
+      --header-bg: #003d7a;
+      --input-bg: #333840;
+      --table-head-bg: #3a3d41;
+      --table-alt-row-bg: #2a2d31;
+      --image-border: #444;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      background: var(--bg-light);
+      padding: 20px;
+      color: var(--text-dark);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    h1, h2, h3 { color: var(--primary); margin-bottom: 10px; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
+
+    .header, .footer {
+      background-color: var(--header-bg);
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      border-radius: 8px;
+      margin-bottom: 24px;
+      transition: background-color 0.3s ease;
+    }
+    .header h1 { margin: 0; }
+
+    .card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.15); transform: translateY(-2px); }
+
+    .lab-section {
+      display: none;
+      background: var(--card-bg);
+      border-left: 5px solid var(--primary);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 20px;
+      margin-bottom: 30px;
+      animation: fadeIn 0.4s ease;
+      transition: background 0.3s ease;
+    }
+    .lab-section.active { display: block; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .styled-table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 1rem; background-color: var(--card-bg); color: var(--text-dark); }
+    .styled-table th, .styled-table td { border: 1px solid var(--gray-border); padding: 10px; vertical-align: top; text-align: left; }
+    .styled-table thead th { background-color: var(--table-head-bg); }
+    .styled-table tbody tr:nth-child(even) { background-color: var(--table-alt-row-bg); }
+
+    img { display: block; margin-top: 10px; max-width: 80%; height: auto; border: 1px solid var(--image-border); border-radius: 4px; }
+
+    .filter-bar { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+
+    .theme-switch { display: flex; align-items: center; gap: 10px; cursor: pointer; user-select: none; }
+    .theme-switch input { display: none; }
+    .theme-switch .slider { width: 40px; height: 20px; background-color: #ccc; border-radius: 20px; position: relative; transition: background-color 0.3s ease; }
+    .theme-switch .slider::before { content: ""; position: absolute; width: 16px; height: 16px; top: 2px; left: 2px; background-color: white; border-radius: 50%; transition: transform 0.3s ease; }
+    .theme-switch input:checked + .slider { background-color: var(--primary); }
+    .theme-switch input:checked + .slider::before { transform: translateX(20px); }
+    .switch-label { font-size: 0.9rem; color: var(--text-dark); }
+
+    .toggle-button { background-color: var(--primary); color: white; border: none; padding: 8px 12px; border-radius: 4px; font-size: 0.95rem; cursor: pointer; margin: 10px 0; transition: background-color 0.3s ease; }
+    .toggle-button:hover { background-color: #003d7a; }
+
+    .callout { border-left: 4px solid var(--primary); background: var(--table-alt-row-bg); padding: 10px 12px; border-radius: 6px; margin: 10px 0; }
+
+    .container { max-width: 960px; margin: auto; }
+  </style>
+</head>
+<body class="light">
+  <header class="header">
+    <h1>HTM251: Agile Project Management Fundamentals – Lab 1</h1>
+  </header>
+
+  <section class="card filter-bar">
+    <div>
+      <strong>Lab:</strong>
+      <select id="labFilter" onchange="filterLabs()">
+        <option value="">----Select----</option>
+        <option value="Lab 1" selected>Lab 1</option>
+      </select>
+    </div>
+
+    <label class="theme-switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider"></span>
+      <span class="switch-label">Dark Mode</span>
+    </label>
+  </section>
+
+  <!-- Lab 1 Content -->
+  <section id="Lab 1" class="lab-section active">
+    <h2>Lab 1: Orientation and Navigation</h2>
+
+    <h3>Part 1: Creating Favorites</h3>
+    <p>Many, if not all of the features you will be using will be located under the <em>Clinical Asset Management</em> and <em>Clinical Asset Management Admin</em> modules. For ease of navigation, we will show you how to favorite and pin those lists, so you always have easy access.</p>
+    <ol>
+      <li>Login to Nuvolo using: <a href="https://vaoittest.servicenowservices.com/now/nav/ui/classic/params/target/%24pa_dashboard.do" target="_blank" rel="noopener">vaoittest.servicenowservices.com</a>.</li>
+      <li>When prompted, select your VA.gov account to sign in. <span class="callout">(Image placeholder)</span></li>
+      <li>Upon login, confirm you see the banner at the top of your screen. <span class="callout">(Image placeholder)</span></li>
+      <li>At the top left corner of your browser, select <strong>All</strong>. <span class="callout">(Image placeholder)</span></li>
+      <li>In the dropdown list, scroll until you see <em>Clinical Asset Management</em> and <em>Clinical Asset Management Admin</em>. <span class="callout">(Image placeholder)</span></li>
+      <li>You can also type “Clinical Asset Management” into your search bar.</li>
+      <li>Hover your mouse over <em>Clinical Asset Management</em>.</li>
+      <li>Click the star icon to the right of <em>Clinical Asset Management</em>. <span class="callout">(Image placeholder)</span></li>
+      <li>Confirm your Favorites box matches the screenshot, then select <strong>Done</strong>. <span class="callout">(Image placeholder)</span></li>
+      <li>Repeat steps 6–9 for <em>Clinical Asset Management Admin</em>.</li>
+      <li>Select <strong>Favorites</strong> at the top left corner of your browser and pin your Favorites bar. <span class="callout">(Image placeholder)</span></li>
+    </ol>
+
+    <h3>Part 2: Personalizing your Favorites</h3>
+    <p>There are over 100 modules and selectable options under Clinical Asset Management and Clinical Asset Management Admin. While they all serve a specific purpose, some will be much more beneficial than others. Remove menus, lists, and options that you will not use to streamline your UI. You can also edit your Favorites bar to make it more personalized and easier to use.</p>
+    <ol>
+      <li>Reference your Favorites bar and expand <em>Clinical Asset Management</em>. <span class="callout">(Image placeholder)</span></li>
+      <li>Scroll to <em>Emergency Events &amp; Contacts</em>, hover, and click the <strong>X</strong> to remove it. Confirm removal. <span class="callout">(Image placeholder)</span></li>
+      <li>The module will be removed from Favorites. You can still access it from the <strong>All</strong> menu. Take a minute to remove other modules you don’t use frequently.</li>
+      <li>Click the pencil/notepad icon to edit favorites. Explore options to change colors, order, and icons. Be sure to click <strong>Save Edits</strong> before leaving. <span class="callout">(Image placeholder)</span></li>
+    </ol>
+
+    <h3>Part 3: Navigating Dashboards</h3>
+    <p>Dashboards are a key feature within Nuvolo. Add dashboards to Favorites, familiarize yourself with the dashboard page, and learn how to create and access shared dashboards.</p>
+    <ol>
+      <li>Select <strong>All</strong> and hover over <strong>Dashboards</strong>. Click the star icon to favorite. <span class="callout">(Image placeholder)</span></li>
+      <li>Confirm the Favorites box and select <strong>Done</strong>. <span class="callout">(Image placeholder)</span></li>
+      <li>Select <strong>Dashboards</strong> within your pinned Favorites bar. <span class="callout">(Image placeholder)</span></li>
+      <li>The following image is a layout and familiarization of the dashboard page (labels a–e). <span class="callout">(Image placeholder)</span></li>
+    </ol>
+    <ul>
+      <li><strong>Create a Dashboard:</strong> Create and name your dashboard; assign roles for members.</li>
+      <li><strong>Convenience Tabs:</strong> View dashboards by <em>Recent</em>, <em>Owned by Me</em>, <em>Shared with Me</em>, and <em>All</em>.</li>
+      <li><strong>Group Filter:</strong> Filter by groups such as <em>HTM Dashboards</em> and <em>Software Asset Management</em>.</li>
+      <li><strong>Search Dashboard:</strong> Search for a specific dashboard.</li>
+      <li><strong>Dashboard Tile:</strong> Each dashboard appears as a tile in the grid—click to open.</li>
+    </ul>
+
+    <h3>Part 4: Your Profile</h3>
+    <p>Access and verify your profile information and adjust your preferences.</p>
+    <ol>
+      <li>Select the profile icon in the top-right corner. <span class="callout">(Image placeholder)</span></li>
+      <li>Select <strong>Profile</strong> and confirm your information is accurate. <span class="callout">(Image placeholder)</span></li>
+      <li>Open the profile icon again and select <strong>Preferences</strong>. Adjust settings to your preferences. <span class="callout">(Image placeholder)</span></li>
+    </ol>
+
+    <h3>Part 5: Tools and Shortcuts</h3>
+    <ol>
+      <li>Use the <strong>Favorites Search Bar</strong> and type “Work Order.” <span class="callout">(Image placeholder)</span></li>
+      <li>Note: Favorites Search returns items added to your Favorites.</li>
+      <li>Use the <strong>All-Purpose Search Bar</strong> by clicking <strong>All</strong> and typing “Promo Codes.” Items not in Favorites are still searchable. <span class="callout">(Image placeholder)</span></li>
+      <li>Select <strong>History</strong> at the top to review visited pages. Use the History tab instead of the browser Back button. <span class="callout">(Image placeholder)</span></li>
+    </ol>
+
+    <div class="callout">
+      <strong>Note from Christopher M. Stringer (Walla Walla):</strong> The items listed are on the <em>ITIL User Dashboard</em>, not the <em>HTM Nuvolo User Interface</em>.
+    </div>
+
+    <ul>
+      <li>My approvals</li>
+      <li>Tickets assigned to me</li>
+      <li>My team’s work</li>
+      <li>Tickets for me <span class="callout">(Image placeholder)</span></li>
+    </ul>
+
+    <p>Add the ITIL User Dashboard to Favorites by clicking the star on the dashboard, selecting <strong>Done</strong>, and confirming it appears in your pinned Favorites menu. <span class="callout">(Image placeholders)</span></p>
+
+    <h3>Part 6: Setting up Your Ward</h3>
+    <p class="callout">Need to ask for guidance on what this looks like. (Placeholder for future content.)</p>
+
+    <h3>Part 7: Scavenger Hunt</h3>
+    <p>Use your profile, preferences, dashboards, Favorites bar, and Clinical Asset Management to explore Nuvolo and answer the following:</p>
+    <ol>
+      <li>How would you find the dashboard titled “HTM – My Open PM List”?</li>
+      <li>Who owns the dashboard titled “HTM – My Open PM List”?</li>
+      <li>What are the 4 available options under the <em>Safety &amp; Recall Alerts</em> list?</li>
+      <li>On what tab can you see upcoming and assigned PMs?</li>
+      <li>What is the number value for <em>Overall Working Capacity</em> of <em>Facility Name: HTM, Description: HTM Program Office</em>? (Hint: look for “organizations and spaces”)</li>
+      <li>What are the first 5 value columns within <em>My Work Orders</em>?</li>
+      <li>Where can you go to change your time zone?</li>
+      <li>Where can you see a list of all dashboards?</li>
+      <li>Under <strong>Favorites</strong>, where does <strong>Home</strong> take you?</li>
+      <li>Change one of your Favorites to the color purple.</li>
+    </ol>
+  </section>
+
+  <footer class="footer">
+    <p>HTM251 Labs • Agile Project Management Fundamentals</p>
+  </footer>
+
+  <script>
+    // Theme toggle
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark', toggle.checked);
+      document.body.classList.toggle('light', !toggle.checked);
+    });
+
+    // Lab filter (only Lab 1 for now, but keeps structure if you add more labs later)
+    function filterLabs() {
+      const val = document.getElementById('labFilter').value;
+      document.querySelectorAll('.lab-section').forEach(sec => sec.classList.remove('active'));
+      if (val) { document.getElementById(val).classList.add('active'); }
+    }
+  </script>
+</body>
+</html>

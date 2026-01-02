@@ -132,117 +132,207 @@
     </label>
   </section>
 
-  <!-- Lab 1 Content -->
-  <section id="Lab 1" class="lab-section active">
-    <h2>Lab 1: Orientation and Navigation</h2>
+  <main class="container">
+    <section class="lab-section active" data-lab="Lab 1">
+      <h2>Lab 1: Orientation and Navigation</h2>
 
-    <h3>Part 1: Creating Favorites</h3>
-    <p>Many, if not all of the features you will be using will be located under the <em>Clinical Asset Management</em> and <em>Clinical Asset Management Admin</em> modules. For ease of navigation, we will show you how to favorite and pin those lists, so you always have easy access.</p>
-    <ol>
-      <li>Login to Nuvolo using: <a href="https://vaoittest.servicenowservices.com/now/nav/ui/classic/params/target/%24pa_dashboard.do" target="_blank" rel="noopener">vaoittest.servicenowservices.com</a>.</li>
-      <li>When prompted, select your VA.gov account to sign in. <span class="callout">(Image placeholder)</span></li>
-      <li>Upon login, confirm you see the banner at the top of your screen. <span class="callout">(Image placeholder)</span></li>
-      <li>At the top left corner of your browser, select <strong>All</strong>. <span class="callout">(Image placeholder)</span></li>
-      <li>In the dropdown list, scroll until you see <em>Clinical Asset Management</em> and <em>Clinical Asset Management Admin</em>. <span class="callout">(Image placeholder)</span></li>
-      <li>You can also type “Clinical Asset Management” into your search bar.</li>
-      <li>Hover your mouse over <em>Clinical Asset Management</em>.</li>
-      <li>Click the star icon to the right of <em>Clinical Asset Management</em>. <span class="callout">(Image placeholder)</span></li>
-      <li>Confirm your Favorites box matches the screenshot, then select <strong>Done</strong>. <span class="callout">(Image placeholder)</span></li>
-      <li>Repeat steps 6–9 for <em>Clinical Asset Management Admin</em>.</li>
-      <li>Select <strong>Favorites</strong> at the top left corner of your browser and pin your Favorites bar. <span class="callout">(Image placeholder)</span></li>
-    </ol>
+      <h3>Part 1: Creating Favorites</h3>
+      <p>Many, if not all of the features you will be using will be located under the “Clinical Asset Management” and “Clinical Asset Management Admin” modules. For ease of navigation, we will show you how to favorite and pin those lists, so you always have easy access.</p>
+      <ol>
+        <li>Login to Nuvolo using the following website:
+          <ol type="a">
+            <li>vaoititest.servicenowservices.com</li>
+          </ol>
+        </li>
+        <li>When prompted, select your VA.gov account to sign in</li>
+        <li>Upon login, confirm you see the following banner at the top of your screen:
+          <img alt="Screenshot of login banner" src="">
+        </li>
+        <li>At the top left corner of your browser, select “All”</li>
+        <li>In the dropdown list, scroll down until you see “Clinical Asset Management” and “Clinical Asset Management Admin”:
+          <ol type="a">
+            <li>You can also type in “Clinical Asset Management” into your search bar</li>
+          </ol>
+        </li>
+        <li>Hover your mouse over “Clinical Asset Management”</li>
+        <li>Click the star icon to the right of “Clinical Asset Management”</li>
+        <li>Once you have clicked the star icon, confirm your Favorites Box matches the following screenshot:
+          <img alt="Screenshot of Favorites Box" src="">
+        </li>
+        <li>Select "Done"</li>
+        <li>Repeat steps 6-9 for "Clinical Asset Management Admin"</li>
+        <li>At the top left corner of your browser, select "Favorites"</li>
+        <li>Confirm your “Favorites” menu contains “Clinical Asset Management” and “Clinical Asset Management Admin”
+          <img alt="Screenshot of Favorites menu" src="">
+        </li>
+        <li>Select the pin icon to pin your Favorites bar
+          <img alt="Screenshot of pin icon" src="">
+        </li>
+      </ol>
 
-    <h3>Part 2: Personalizing your Favorites</h3>
-    <p>There are over 100 modules and selectable options under Clinical Asset Management and Clinical Asset Management Admin. While they all serve a specific purpose, some will be much more beneficial than others. Remove menus, lists, and options that you will not use to streamline your UI. You can also edit your Favorites bar to make it more personalized and easier to use.</p>
-    <ol>
-      <li>Reference your Favorites bar and expand <em>Clinical Asset Management</em>. <span class="callout">(Image placeholder)</span></li>
-      <li>Scroll to <em>Emergency Events &amp; Contacts</em>, hover, and click the <strong>X</strong> to remove it. Confirm removal. <span class="callout">(Image placeholder)</span></li>
-      <li>The module will be removed from Favorites. You can still access it from the <strong>All</strong> menu. Take a minute to remove other modules you don’t use frequently.</li>
-      <li>Click the pencil/notepad icon to edit favorites. Explore options to change colors, order, and icons. Be sure to click <strong>Save Edits</strong> before leaving. <span class="callout">(Image placeholder)</span></li>
-    </ol>
+      <h3>Part 2: Personalizing your Favorites</h3>
+      <p>You have probably noticed that there are over 100 modules and selectable options under Clinical Asset Management and Clinical Asset Management Admin. While they all serve a specific purpose, some will be much more beneficial than others. Now we will go through the process of removing menus, lists, and options that you will not use in your day-to-day work. This will provide you with a cleaner, more streamlined User Interface that improves your efficiency and ease of use.</p>
+      <p>We will also show you how to edit your Favorites Bar to make it more personalized and easier to use.</p>
+      <ol>
+        <li>Reference your Favorites Bar
+          <img alt="Screenshot of Favorites Bar" src="">
+        </li>
+        <li>Expand “Clinical Asset Management” by clicking on the name</li>
+        <li>Scroll down the list until you see “Emergency Events & Contacts”</li>
+        <li>Let's remove this from our Favorites Bar. Hover your mouse over the name "Emergency Events & Contacts".
+          <img alt="Screenshot of hovering over Emergency Events & Contacts" src="">
+        </li>
+        <li>Click the "X" to remove "Emergency Events & Contacts" from your Favorites Bar.</li>
+        <li>You will see the following pop up, click "Remove" to confirm the removal from your Favorites Bar.
+          <img alt="Screenshot of remove popup" src="">
+        </li>
+        <li>That module within "Clinical Asset Management" will no longer be found in your Favorites Bar. If you ever need to reference it, you can find it in the "All" Bar. Take a minute or two to remove any modules from your Favorites Bar that you don't think you will use frequently.</li>
+        <li>Now let's edit some favorites... reference your Favorites Bar and click the pencil and notepad icon
+          <img alt="Screenshot of edit favorites" src="">
+        </li>
+        <li>Confirm you see the following screen
+          <img alt="Screenshot of edit screen" src="">
+        </li>
+        <li>Take this time to explore the page. You can assign new colors to your Favorites, shift their placement and order within the Favorites Bar, assign new icons, and more. Ensure you click "Save Edits" prior to leaving this page.</li>
+      </ol>
 
-    <h3>Part 3: Navigating Dashboards</h3>
-    <p>Dashboards are a key feature within Nuvolo. Add dashboards to Favorites, familiarize yourself with the dashboard page, and learn how to create and access shared dashboards.</p>
-    <ol>
-      <li>Select <strong>All</strong> and hover over <strong>Dashboards</strong>. Click the star icon to favorite. <span class="callout">(Image placeholder)</span></li>
-      <li>Confirm the Favorites box and select <strong>Done</strong>. <span class="callout">(Image placeholder)</span></li>
-      <li>Select <strong>Dashboards</strong> within your pinned Favorites bar. <span class="callout">(Image placeholder)</span></li>
-      <li>The following image is a layout and familiarization of the dashboard page (labels a–e). <span class="callout">(Image placeholder)</span></li>
-    </ol>
-    <ul>
-      <li><strong>Create a Dashboard:</strong> Create and name your dashboard; assign roles for members.</li>
-      <li><strong>Convenience Tabs:</strong> View dashboards by <em>Recent</em>, <em>Owned by Me</em>, <em>Shared with Me</em>, and <em>All</em>.</li>
-      <li><strong>Group Filter:</strong> Filter by groups such as <em>HTM Dashboards</em> and <em>Software Asset Management</em>.</li>
-      <li><strong>Search Dashboard:</strong> Search for a specific dashboard.</li>
-      <li><strong>Dashboard Tile:</strong> Each dashboard appears as a tile in the grid—click to open.</li>
-    </ul>
+      <h3>Part 3: Navigating Dashboards</h3>
+      <p>Another key feature within Nuvolo are Dashboards. We will add dashboard to your Favorites Bar, familiarize you with the dashboard page, show you how to create new dashboards, and how to access dashboards that have been shared with you.</p>
+      <ol>
+        <li>Select “All” at the top left corner of your browser
+          <img alt="Screenshot of selecting All" src="">
+        </li>
+        <li>Hover your mouse over “Dashboards”</li>
+        <li>Click the star icon to the right of "Dashboards"</li>
+        <li>Once you have clicked the star icon, confirm your Favorites Box matches the following screenshot:
+          <img alt="Screenshot of Favorites Box for Dashboards" src="">
+        </li>
+        <li>Select "Done"</li>
+        <li>Select "Dashboards" within your pinned Favorites Bar
+          <img alt="Screenshot of selecting Dashboards" src="">
+        </li>
+        <li>The following image is a layout and familiarization of the dashboard page:
+          <img alt="Screenshot of dashboard page layout" src="">
+          <ol type="a">
+            <li>Create a Dashboard: Click here to create your own dashboard. You will be able to name your dashboard and select roles for members.</li>
+            <li>Convenience Tabs: The “Recent,” “Owned by Me,” “Shared with Me,” and “All,” tabs are exactly what they sound like. Click on the respective tab to view dashboards grouped by their group name.</li>
+            <li>Group Filter: Use this dropdown menu to filter by groups such as “HTM Dashboards” and “Software Asset Management.”</li>
+            <li>Search Dashboard: Use this feature to search for a specific dashboard.</li>
+            <li>Dashboard Title: This is what each dashboard looks like in the grid format. Click on it to view that specific dashboard.</li>
+          </ol>
+        </li>
+      </ol>
 
-    <h3>Part 4: Your Profile</h3>
-    <p>Access and verify your profile information and adjust your preferences.</p>
-    <ol>
-      <li>Select the profile icon in the top-right corner. <span class="callout">(Image placeholder)</span></li>
-      <li>Select <strong>Profile</strong> and confirm your information is accurate. <span class="callout">(Image placeholder)</span></li>
-      <li>Open the profile icon again and select <strong>Preferences</strong>. Adjust settings to your preferences. <span class="callout">(Image placeholder)</span></li>
-    </ol>
+      <h3>Part 4: Your Profile</h3>
+      <p>Next, we want to show you how to access your profile information. Luckily, it’s straightforward and is easy to access.</p>
+      <ol>
+        <li>Select the Profile Icon in the top right corner of your browser
+          <img alt="Screenshot of profile icon" src="">
+        </li>
+        <li>Confirm you see the following list (it should have your name, not Riley Brosnan):
+          <img alt="Screenshot of profile dropdown" src="">
+        </li>
+        <li>Select “Profile”</li>
+        <li>Once you have selected “Profile” you can confirm all of your information is accurate
+          <img alt="Screenshot of profile page" src="">
+        </li>
+        <li>Now click on your Profile Icon again</li>
+        <li>Select "Preferences" from the dropdown list
+          <img alt="Screenshot of selecting preferences" src="">
+        </li>
+        <li>Once you have selected “Preferences” you can adjust user setting to your preferences and desires
+          <img alt="Screenshot of preferences page" src="">
+        </li>
+      </ol>
 
-    <h3>Part 5: Tools and Shortcuts</h3>
-    <ol>
-      <li>Use the <strong>Favorites Search Bar</strong> and type “Work Order.” <span class="callout">(Image placeholder)</span></li>
-      <li>Note: Favorites Search returns items added to your Favorites.</li>
-      <li>Use the <strong>All-Purpose Search Bar</strong> by clicking <strong>All</strong> and typing “Promo Codes.” Items not in Favorites are still searchable. <span class="callout">(Image placeholder)</span></li>
-      <li>Select <strong>History</strong> at the top to review visited pages. Use the History tab instead of the browser Back button. <span class="callout">(Image placeholder)</span></li>
-    </ol>
+      <h3>Part 5: Tools and Shortcuts</h3>
+      <p>We've covered how to navigate Nuvolo, access your preferences, view your profile, customize your Favorites, and navigate between pages. Now we want to make sure you can quickly and efficiently use Nuvolo. This part will focus on some tips and tricks to ensure that you are maximizing your time while using Nuvolo.</p>
+      <ol>
+        <li>First and foremost, let's use the Search Bar. We'll start with the Favorites Search Bar. Type "Work Order" into your Favorites Search Bar.
+          <img alt="Screenshot of favorites search bar" src="">
+          <ol type="a">
+            <li>The Search Bar is the most effective way to eliminate scrolling and tedious searching for different menu items.
+              <ol type="i">
+                <li>NOTE: when using the Favorites Search Bar, you will only see menu items that have been added to your Favorites</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>Let's use the All-Purpose Search Bar (the Search Bar that doesn't limit you to only Favorites). Click on “All” at the top of your browser and type “Promo Codes”
+          <img alt="Screenshot of all-purpose search bar" src="">
+          <ol type="a">
+            <li>Notice how “Cost Items” was not saved to your Favorites, but you were still able to find it. This All-Purpose Search Bar will allow you to find any menu item or feature even if it has not been saved to your Favorites.</li>
+          </ol>
+        </li>
+        <li>Another extremely useful feature is “History.” At the top of your browser, click on “History.” Confirm you can see the history of pages you’ve visited in Nuvolo, similar to
+          <img alt="Screenshot of history" src="">
+          <ol type="a">
+            <li>This feature is extremely helpful if you find yourself frequently visiting the same page, Work Order, etc.
+              <ol type="i">
+                <li>NOTE: History will look different for each user – it is based on personal navigation history within Nuvolo</li>
+                <li>NOTE: USE THE HISTORY TAB INSTEAD OF THE BACK BUTTON. Nuvolo doesn't work well if you use the browser back button.</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>The HTM Nuvolo User Interface Dashboard will be an extremely helpful landing page as you go about your day-to-day work. This Dashboard will display items such as:
+          <ol type="a">
+            <li>My approvals</li>
+            <li>Tickets assigned to me</li>
+            <li>My team's work</li>
+            <li>Tickets for me</li>
+          </ol>
+          <div class="callout">Commented [SW1]: The items below are actually on the ITIL User Dashboard, not the HTM Nuvolo User Interface.</div>
+        </li>
+        <li>Since this dashboard will have valuable information, unique to you as the user, let's add it to Favorites. Click on the Star Icon at the top-middle of your ITIL User Dashboard
+          <img alt="Screenshot of adding dashboard to favorites" src="">
+        </li>
+        <li>Click "Done"</li>
+        <li>Confirm that “ITIL User Dashboard” appears in your pinned Favorites Menu
+          <img alt="Screenshot of favorites menu with dashboard" src="">
+        </li>
+      </ol>
+      <p>Okay great, now you've established some easy-to-use shortcuts that will help your navigation with Nuvolo. Next, we want you to use those shortcuts to navigate and answer the following questions. As you complete the next part of the lab, keep in mind that there are typically multiple ways to find something within Nuvolo. For each questions, part of your answer will be HOW you found your answer. Don't forget about features like History, Recent, Favorites, Search Bars, dropdown lists, Dashboards, etc.</p>
 
-    <div class="callout">
-      <strong>Note from Christopher M. Stringer (Walla Walla):</strong> The items listed are on the <em>ITIL User Dashboard</em>, not the <em>HTM Nuvolo User Interface</em>.
-    </div>
+      <h3>Part 6: Setting up Your Ward</h3>
+      <p>Need to ask for guidance on what this looks like.</p>
 
-    <ul>
-      <li>My approvals</li>
-      <li>Tickets assigned to me</li>
-      <li>My team’s work</li>
-      <li>Tickets for me <span class="callout">(Image placeholder)</span></li>
-    </ul>
-
-    <p>Add the ITIL User Dashboard to Favorites by clicking the star on the dashboard, selecting <strong>Done</strong>, and confirming it appears in your pinned Favorites menu. <span class="callout">(Image placeholders)</span></p>
-
-    <h3>Part 6: Setting up Your Ward</h3>
-    <p class="callout">Need to ask for guidance on what this looks like. (Placeholder for future content.)</p>
-
-    <h3>Part 7: Scavenger Hunt</h3>
-    <p>Use your profile, preferences, dashboards, Favorites bar, and Clinical Asset Management to explore Nuvolo and answer the following:</p>
-    <ol>
-      <li>How would you find the dashboard titled “HTM – My Open PM List”?</li>
-      <li>Who owns the dashboard titled “HTM – My Open PM List”?</li>
-      <li>What are the 4 available options under the <em>Safety &amp; Recall Alerts</em> list?</li>
-      <li>On what tab can you see upcoming and assigned PMs?</li>
-      <li>What is the number value for <em>Overall Working Capacity</em> of <em>Facility Name: HTM, Description: HTM Program Office</em>? (Hint: look for “organizations and spaces”)</li>
-      <li>What are the first 5 value columns within <em>My Work Orders</em>?</li>
-      <li>Where can you go to change your time zone?</li>
-      <li>Where can you see a list of all dashboards?</li>
-      <li>Under <strong>Favorites</strong>, where does <strong>Home</strong> take you?</li>
-      <li>Change one of your Favorites to the color purple.</li>
-    </ol>
-  </section>
+      <h3>Part 7: Scavenger Hunt</h3>
+      <p>Okay great, so now you’ve followed along as we introduced you to your profile, your preferences, dashboards, your favorites bar, and the most important list you will be using: Clinical Asset Management. Next, I want you to use what you know and your current favorites bar setup to explore Nuvolo and find some features. Answer the questions below by navigating around the site and exploring. Don’t be afraid to ask questions!</p>
+      <ol>
+        <li>How would you find the dashboard titled “HTM – My Open PM List”?</li>
+        <li>Who owns the dashboard titled “HTM – My Open PM List”?</li>
+        <li>What are the 4 available options to select under the “Safety & Recall Alerts” list? (hint: the search bar in your favorites bar may help)</li>
+        <li>On what tab can you see upcoming and assigned PMs?</li>
+        <li>What is number value for “Overall Working Capacity” of “Facility Name: HTM, Description: HTM Program Office”? (hint: try looking for “organizations and spaces”)</li>
+        <li>What are the first 5 value columns within “My Work Orders”?</li>
+        <li>Where can you go to change your time zone?</li>
+        <li>Where can you see a list of all dashboards?</li>
+        <li>Under “Favorites,” where does “Home” take you?</li>
+        <li>Change one of your Favorites to the color purple.</li>
+      </ol>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>HTM251 Labs • Agile Project Management Fundamentals</p>
+    <p>&copy; 2026 HTM251 Lab Materials</p>
   </footer>
 
   <script>
-    // Theme toggle
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('change', () => {
-      document.body.classList.toggle('dark', toggle.checked);
-      document.body.classList.toggle('light', !toggle.checked);
-    });
-
-    // Lab filter (only Lab 1 for now, but keeps structure if you add more labs later)
     function filterLabs() {
-      const val = document.getElementById('labFilter').value;
-      document.querySelectorAll('.lab-section').forEach(sec => sec.classList.remove('active'));
-      if (val) { document.getElementById(val).classList.add('active'); }
+      const select = document.getElementById('labFilter');
+      const value = select.value;
+      const sections = document.querySelectorAll('.lab-section');
+      sections.forEach(section => {
+        section.classList.toggle('active', section.dataset.lab === value || value === '');
+      });
     }
+
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark', themeToggle.checked);
+      document.body.classList.toggle('light', !themeToggle.checked);
+    });
   </script>
 </body>
 </html>
