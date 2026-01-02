@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HTM251: Agile Project Management Fundamentals – Lab 1</title>
+  <title>HTM251: Agile Project Management Fundamentals – Labs</title>
   <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -113,7 +112,7 @@
 </head>
 <body class="light">
   <header class="header">
-    <h1>HTM251: Agile Project Management Fundamentals – Lab 1</h1>
+    <h1>HTM251: Agile Project Management Fundamentals – Labs</h1>
   </header>
 
   <section class="card filter-bar">
@@ -121,7 +120,12 @@
       <strong>Lab:</strong>
       <select id="labFilter" onchange="filterLabs()">
         <option value="">----Select----</option>
-        <option value="Lab 1" selected>Lab 1</option>
+        <option value="Lab 1">Lab 1</option>
+        <option value="Lab 2">Lab 2</option>
+        <option value="Lab 3">Lab 3</option>
+        <option value="Lab 4">Lab 4</option>
+        <option value="Lab 5">Lab 5</option>
+        <option value="Lab 6">Lab 6</option>
       </select>
     </div>
 
@@ -132,117 +136,765 @@
     </label>
   </section>
 
-  <!-- Lab 1 Content -->
-  <section id="Lab 1" class="lab-section active">
-    <h2>Lab 1: Orientation and Navigation</h2>
+  <main class="container">
+    <section class="lab-section" data-lab="Lab 1">
+      <h2>Lab 1: Orientation and Navigation</h2>
 
-    <h3>Part 1: Creating Favorites</h3>
-    <p>Many, if not all of the features you will be using will be located under the <em>Clinical Asset Management</em> and <em>Clinical Asset Management Admin</em> modules. For ease of navigation, we will show you how to favorite and pin those lists, so you always have easy access.</p>
-    <ol>
-      <li>Login to Nuvolo using: <a href="https://vaoittest.servicenowservices.com/now/nav/ui/classic/params/target/%24pa_dashboard.do" target="_blank" rel="noopener">vaoittest.servicenowservices.com</a>.</li>
-      <li>When prompted, select your VA.gov account to sign in. <span class="callout">(Image placeholder)</span></li>
-      <li>Upon login, confirm you see the banner at the top of your screen. <span class="callout">(Image placeholder)</span></li>
-      <li>At the top left corner of your browser, select <strong>All</strong>. <span class="callout">(Image placeholder)</span></li>
-      <li>In the dropdown list, scroll until you see <em>Clinical Asset Management</em> and <em>Clinical Asset Management Admin</em>. <span class="callout">(Image placeholder)</span></li>
-      <li>You can also type “Clinical Asset Management” into your search bar.</li>
-      <li>Hover your mouse over <em>Clinical Asset Management</em>.</li>
-      <li>Click the star icon to the right of <em>Clinical Asset Management</em>. <span class="callout">(Image placeholder)</span></li>
-      <li>Confirm your Favorites box matches the screenshot, then select <strong>Done</strong>. <span class="callout">(Image placeholder)</span></li>
-      <li>Repeat steps 6–9 for <em>Clinical Asset Management Admin</em>.</li>
-      <li>Select <strong>Favorites</strong> at the top left corner of your browser and pin your Favorites bar. <span class="callout">(Image placeholder)</span></li>
-    </ol>
+      <h3>Part 1: Creating Favorites</h3>
+      <p>Many, if not all of the features you will be using will be located under the “Clinical Asset Management” and “Clinical Asset Management Admin” modules. For ease of navigation, we will show you how to favorite and pin those lists, so you always have easy access.</p>
+      <ol>
+        <li>Login to Nuvolo using the following website:
+          <ol type="a">
+            <li>vaoititest.servicenowservices.com</li>
+          </ol>
+        </li>
+        <li>When prompted, select your VA.gov account to sign in</li>
+        <li>Upon login, confirm you see the following banner at the top of your screen:
+          <img alt="Pink banner reading: 'This is the TEST instance. This instance is used for training and development/testing only.'" src="">
+        </li>
+        <li>At the top left corner of your browser, select “All” </li>
+        <li>In the dropdown list, scroll down until you see “Clinical Asset Management” and “Clinical Asset Management Admin”:
+          <ol type="a">
+            <li>You can also type in “Clinical Asset Management” into your search bar</li>
+          </ol>
+        </li>
+        <li>Hover your mouse over “Clinical Asset Management”</li>
+        <li>Click the star icon to the right of “Clinical Asset Management”</li>
+        <li>Once you have clicked the star icon, confirm your Favorites Box matches the following screenshot: 
+          <img alt="Popup window titled 'Favorite added' with fields Name: Clinical Asset Management, Location: Top level (default), buttons More, Remove, Done" src="">
+        </li>
+        <li>Select "Done"</li>
+        <li>Repeat steps 6-9 for "Clinical Asset Management Admin"</li>
+        <li>At the top left corner of your browser, select "Favorites" </li>
+        <li>Confirm your “Favorites” menu contains “Clinical Asset Management” and “Clinical Asset Management Admin”
+          <img alt="Favorites menu with Home, Clinical Asset Management, Clinical Asset Management Admin" src="">
+        </li>
+        <li>Select the pin icon to pin your Favorites bar
+          <img alt="Favorites menu with pin icon highlighted next to the filter icon" src="">
+        </li>
+      </ol>
 
-    <h3>Part 2: Personalizing your Favorites</h3>
-    <p>There are over 100 modules and selectable options under Clinical Asset Management and Clinical Asset Management Admin. While they all serve a specific purpose, some will be much more beneficial than others. Remove menus, lists, and options that you will not use to streamline your UI. You can also edit your Favorites bar to make it more personalized and easier to use.</p>
-    <ol>
-      <li>Reference your Favorites bar and expand <em>Clinical Asset Management</em>. <span class="callout">(Image placeholder)</span></li>
-      <li>Scroll to <em>Emergency Events &amp; Contacts</em>, hover, and click the <strong>X</strong> to remove it. Confirm removal. <span class="callout">(Image placeholder)</span></li>
-      <li>The module will be removed from Favorites. You can still access it from the <strong>All</strong> menu. Take a minute to remove other modules you don’t use frequently.</li>
-      <li>Click the pencil/notepad icon to edit favorites. Explore options to change colors, order, and icons. Be sure to click <strong>Save Edits</strong> before leaving. <span class="callout">(Image placeholder)</span></li>
-    </ol>
+      <h3>Part 2: Personalizing your Favorites</h3>
+      <p>You have probably noticed that there are over 100 modules and selectable options under Clinical Asset Management and Clinical Asset Management Admin. While they all serve a specific purpose, some will be much more beneficial than others. Now we will go through the process of removing menus, lists, and options that you will not use in your day-to-day work. This will provide you with a cleaner, more streamlined User Interface that improves your efficiency and ease of use.</p>
+      <p>We will also show you how to edit your Favorites Bar to make it more personalized and easier to use.</p>
+      <ol>
+        <li>Reference your Favorites Bar
+          <img alt="Favorites bar with Home, Clinical Asset Management (expanded to Clinical Asset Management Admin), Clinical Asset Management Admin" src="">
+        </li>
+        <li>Expand “Clinical Asset Management” by clicking on the name</li>
+        <li>Scroll down the list until you see “Emergency Events & Contacts” </li>
+        <li>Let's remove this from our Favorites Bar. Hover your mouse over the name "Emergency Events & Contacts".
+          <img alt="Favorites bar expanded to show Emergency Events & Contacts, with X icon next to it" src="">
+        </li>
+        <li>Click the "X" to remove "Emergency Events & Contacts" from your Favorites Bar.</li>
+        <li>You will see the following pop up, click "Remove" to confirm the removal from your Favorites Bar.
+          <img alt="Popup 'Remove favorite' with message 'You are about to remove this item from your favorite menu. Are you sure you want to remove it?' buttons Cancel, Remove" src="">
+        </li>
+        <li>That module within "Clinical Asset Management" will no longer be found in your Favorites Bar. If you ever need to reference it, you can find it in the "All" Bar. Take a minute or two to remove any modules from your Favorites Bar that you don't think you will use frequently. </li>
+        <li>Now let's edit some favorites... reference your Favorites Bar and click the pencil and notepad icon
+          <img alt="Favorites bar with edit icon (pencil and notepad) highlighted" src="">
+        </li>
+        <li>Confirm you see the following screen
+          <img alt="Edit favorites screen with list of favorites like Home, Clinical Asset Management, Clinical Asset Management Admin, color picker, icon picker, and Save Edits button" src="">
+        </li>
+        <li>Take this time to explore the page. You can assign new colors to your Favorites, shift their placement and order within the Favorites Bar, assign new icons, and more. Ensure you click "Save Edits" prior to leaving this page. </li>
+      </ol>
 
-    <h3>Part 3: Navigating Dashboards</h3>
-    <p>Dashboards are a key feature within Nuvolo. Add dashboards to Favorites, familiarize yourself with the dashboard page, and learn how to create and access shared dashboards.</p>
-    <ol>
-      <li>Select <strong>All</strong> and hover over <strong>Dashboards</strong>. Click the star icon to favorite. <span class="callout">(Image placeholder)</span></li>
-      <li>Confirm the Favorites box and select <strong>Done</strong>. <span class="callout">(Image placeholder)</span></li>
-      <li>Select <strong>Dashboards</strong> within your pinned Favorites bar. <span class="callout">(Image placeholder)</span></li>
-      <li>The following image is a layout and familiarization of the dashboard page (labels a–e). <span class="callout">(Image placeholder)</span></li>
-    </ol>
-    <ul>
-      <li><strong>Create a Dashboard:</strong> Create and name your dashboard; assign roles for members.</li>
-      <li><strong>Convenience Tabs:</strong> View dashboards by <em>Recent</em>, <em>Owned by Me</em>, <em>Shared with Me</em>, and <em>All</em>.</li>
-      <li><strong>Group Filter:</strong> Filter by groups such as <em>HTM Dashboards</em> and <em>Software Asset Management</em>.</li>
-      <li><strong>Search Dashboard:</strong> Search for a specific dashboard.</li>
-      <li><strong>Dashboard Tile:</strong> Each dashboard appears as a tile in the grid—click to open.</li>
-    </ul>
+      <h3>Part 3: Navigating Dashboards</h3>
+      <p>Another key feature within Nuvolo are Dashboards. We will add dashboard to your Favorites Bar, familiarize you with the dashboard page, show you how to create new dashboards, and how to access dashboards that have been shared with you.</p>
+      <ol>
+        <li>Select “All” at the top left corner of your browser
+          <img alt="All menu expanded, showing Self-Service, Service Portal, Homepage, Business Applications, Dashboards (highlighted), Groups, My Demands" src="">
+        </li>
+        <li>Hover your mouse over “Dashboards” </li>
+        <li>Click the star icon to the right of "Dashboards"</li>
+        <li>Once you have clicked the star icon, confirm your Favorites Box matches the following screenshot: 
+          <img alt="Popup 'Favorite added' with name 'Self-Service - Dashboards', location 'Top level (default)', buttons More, Remove, Done" src="">
+        </li>
+        <li>Select "Done"</li>
+        <li>Select "Dashboards" within your pinned Favorites Bar 
+          <img alt="Favorites bar with Home, Clinical Asset Management, Clinical Asset Management Admin, Self-Service - Dashboards (highlighted)" src="">
+        </li>
+        <li>The following image is a layout and familiarization of the dashboard page:
+          <img alt="Dashboards page with tabs Recent, Owned by Me, Shared with Me, All; Group Filter: All groups; Search dashboard; and grid of dashboards like 'VLER NH Business T7', '10 Million', '1st Shift Dashboard', 'ACES CIAS Team'" src="">
+          <ol type="a">
+            <li>Create a Dashboard: Click here to create your own dashboard. You will be able to name your dashboard and select roles for members.</li>
+            <li>Convenience Tabs: The “Recent,” “Owned by Me,” “Shared with Me,” and “All,” tabs are exactly what they sound like. Click on the respective tab to view dashboards grouped by their group name.</li>
+            <li>Group Filter: Use this dropdown menu to filter by groups such as “HTM Dashboards” and “Software Asset Management.”</li>
+            <li>Search Dashboard: Use this feature to search for a specific dashboard.</li>
+            <li>Dashboard Title: This is what each dashboard looks like in the grid format. Click on it to view that specific dashboard.</li>
+          </ol>
+        </li>
+      </ol>
 
-    <h3>Part 4: Your Profile</h3>
-    <p>Access and verify your profile information and adjust your preferences.</p>
-    <ol>
-      <li>Select the profile icon in the top-right corner. <span class="callout">(Image placeholder)</span></li>
-      <li>Select <strong>Profile</strong> and confirm your information is accurate. <span class="callout">(Image placeholder)</span></li>
-      <li>Open the profile icon again and select <strong>Preferences</strong>. Adjust settings to your preferences. <span class="callout">(Image placeholder)</span></li>
-    </ol>
+      <h3>Part 4: Your Profile</h3>
+      <p>Next, we want to show you how to access your profile information. Luckily, it’s straightforward and is easy to access.</p>
+      <ol>
+        <li>Select the Profile Icon in the top right corner of your browser
+          <img alt="Top right corner with search, question, bell, and profile icon (RB) highlighted" src="">
+        </li>
+        <li>Confirm you see the following list (it should have your name, not Riley Brosnan):
+          <img alt="Dropdown menu with name 'Riley Brosnan (VH...) Management Analyst @ServiceNow, items Profile, Preferences, Keyboard shortcuts, Printer friendly version, Log out" src="">
+        </li>
+        <li>Select “Profile”</li>
+        <li>Once you have selected “Profile” you can confirm all of your information is accurate
+          <img alt="Profile page with fields First name, Last name, Email, Business phone, Mobile phone, Location, Date format, Time zone, Title 'Management Analyst'" src="">
+        </li>
+        <li>Now click on your Profile Icon again </li>
+        <li>Select "Preferences" from the dropdown list 
+          <img alt="Dropdown menu with Profile, Preferences (highlighted), Keyboard shortcuts, Printer friendly version, Log out" src="">
+        </li>
+        <li>Once you have selected “Preferences” you can adjust user setting to your preferences and desires</li>
+      </ol>
 
-    <h3>Part 5: Tools and Shortcuts</h3>
-    <ol>
-      <li>Use the <strong>Favorites Search Bar</strong> and type “Work Order.” <span class="callout">(Image placeholder)</span></li>
-      <li>Note: Favorites Search returns items added to your Favorites.</li>
-      <li>Use the <strong>All-Purpose Search Bar</strong> by clicking <strong>All</strong> and typing “Promo Codes.” Items not in Favorites are still searchable. <span class="callout">(Image placeholder)</span></li>
-      <li>Select <strong>History</strong> at the top to review visited pages. Use the History tab instead of the browser Back button. <span class="callout">(Image placeholder)</span></li>
-    </ol>
+      <h3>Part 5: Tools and Shortcuts</h3>
+      <p>We've covered how to navigate Nuvolo, access your preferences, view your profile, customize your Favorites, and navigate between pages. Now we want to make sure you can quickly and efficiently use Nuvolo. This part will focus on some tips and tricks to ensure that you are maximizing your time while using Nuvolo.</p>
+      <ol>
+        <li>First and foremost, let's use the Search Bar. We'll start with the Favorites Search Bar. Type "Work Order" into your Favorites Search Bar.
+          <img alt="Favorites bar with search bar typed 'Work Order', showing My Work Order Boards, Work Orders, Work Orders, New Work Order, All non-PM, All PM, Open/Pending, My Work Orders, My Group Work Orders, My Work Orders: On Hold, My Groups Unassigned W..., My Groups Work Orders" src="">
+          <ol type="a">
+            <li>The Search Bar is the most effective way to eliminate scrolling and tedious searching for different menu items.
+              <ol type="i">
+                <li>NOTE: when using the Favorites Search Bar, you will only see menu items that have been added to your Favorites</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>Let's use the All-Purpose Search Bar (the Search Bar that doesn't limit you to only Favorites). Click on “All” at the top of your browser and type “Promo Codes”
+          <img alt="All menu with search 'Promo Codes', showing No Results in Favorites, All Results Cost Items, Credit Protection Promo Codes" src="">
+          <ol type="a">
+            <li>Notice how “Cost Items” was not saved to your Favorites, but you were still able to find it. This All-Purpose Search Bar will allow you to find any menu item or feature even if it has not been saved to your Favorites.</li>
+          </ol>
+        </li>
+        <li>Another extremely useful feature is “History.” At the top of your browser, click on “History.” Confirm you can see the history of pages you’ve visited in Nuvolo, similar to 
+          <img alt="History menu showing ITIL User Dashboard 1 min ago, Dashboard 1 min ago, ITIL User Dashboard 1 min ago, My Assessments and Surveys 2 min ago, ServiceNow 6 min ago, NOVEMBER 10, Dashboard, ITIL User Dashboard, ServiceNow, NOVEMBER 7, Clinical Work Orders CWKD1379439, Clinical Work Orders CWKD1379439" src="">
+          <ol type="a">
+            <li>This feature is extremely helpful if you find yourself frequently visiting the same page, Work Order, etc.
+              <ol type="i">
+                <li>NOTE: History will look different for each user – it is based on personal navigation history within Nuvolo</li>
+                <li>NOTE: USE THE HISTORY TAB INSTEAD OF THE BACK BUTTON. Nuvolo doesn't work well if you use the browser back button.</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>The HTM Nuvolo User Interface Dashboard will be an extremely helpful landing page as you go about your day-to-day work. This Dashboard will display items such as:
+          <ol type="a">
+            <li>My approvals</li>
+            <li>Tickets assigned to me</li>
+            <li>My team's work</li>
+            <li>Tickets for me</li>
+          </ol>
+          <div class="callout">Commented [SW1]: The items below are actually on the ITIL User Dashboard, not the HTM Nuvolo User Interface.</div>
+        </li>
+        <li>Since this dashboard will have valuable information, unique to you as the user, let's add it to Favorites. Click on the Star Icon at the top-middle of your ITIL User Dashboard
+          <img alt="ITIL User Dashboard with star icon highlighted in the top bar" src="">
+        </li>
+        <li>Click "Done"</li>
+        <li>Confirm that “ITIL User Dashboard” appears in your pinned Favorites Menu
+          <img alt="Favorites bar with Home, Clinical Asset Management, Clinical Asset Management Admin, Self-Service - Dashboards, + ITIL User Dashboard (highlighted)" src="">
+        </li>
+      </ol>
+      <p>Okay great, now you've established some easy-to-use shortcuts that will help your navigation with Nuvolo. Next, we want you to use those shortcuts to navigate and answer the following questions. As you complete the next part of the lab, keep in mind that there are typically multiple ways to find something within Nuvolo. For each questions, part of your answer will be HOW you found your answer. Don't forget about features like History, Recent, Favorites, Search Bars, dropdown lists, Dashboards, etc.</p>
 
-    <div class="callout">
-      <strong>Note from Christopher M. Stringer (Walla Walla):</strong> The items listed are on the <em>ITIL User Dashboard</em>, not the <em>HTM Nuvolo User Interface</em>.
-    </div>
+      <h3>Part 6: Setting up Your Ward</h3>
+      <p>Need to ask for guidance on what this looks like.</p>
 
-    <ul>
-      <li>My approvals</li>
-      <li>Tickets assigned to me</li>
-      <li>My team’s work</li>
-      <li>Tickets for me <span class="callout">(Image placeholder)</span></li>
-    </ul>
+      <h3>Part 7: Scavenger Hunt</h3>
+      <p>Okay great, so now you’ve followed along as we introduced you to your profile, your preferences, dashboards, your favorites bar, and the most important list you will be using: Clinical Asset Management. Next, I want you to use what you know and your current favorites bar setup to explore Nuvolo and find some features. Answer the questions below by navigating around the site and exploring. Don’t be afraid to ask questions!</p>
+      <ol>
+        <li>How would you find the dashboard titled “HTM – My Open PM List”?</li>
+        <li>Who owns the dashboard titled “HTM – My Open PM List”?</li>
+        <li>What are the 4 available options to select under the “Safety & Recall Alerts” list? (hint: the search bar in your favorites bar may help)</li>
+        <li>On what tab can you see upcoming and assigned PMs?</li>
+        <li>What is number value for “Overall Working Capacity” of “Facility Name: HTM, Description: HTM Program Office”? (hint: try looking for “organizations and spaces”)</li>
+        <li>What are the first 5 value columns within “My Work Orders”?</li>
+        <li>Where can you go to change your time zone?</li>
+        <li>Where can you see a list of all dashboards?</li>
+        <li>Under “Favorites,” where does “Home” take you?</li>
+        <li>Change one of your Favorites to the color purple.</li>
+      </ol>
+    </section>
 
-    <p>Add the ITIL User Dashboard to Favorites by clicking the star on the dashboard, selecting <strong>Done</strong>, and confirming it appears in your pinned Favorites menu. <span class="callout">(Image placeholders)</span></p>
+    <section class="lab-section" data-lab="Lab 2">
+      <h2>Lab 2: Work Orders and Documentation</h2>
 
-    <h3>Part 6: Setting up Your Ward</h3>
-    <p class="callout">Need to ask for guidance on what this looks like. (Placeholder for future content.)</p>
+      <h3>Part 1: Introduction to Work Orders</h3>
+      <p>Now that you have some familiarity with Nuvolo and its User Interface, we can move on to one of the most utilized aspects of the system: Work Orders. Work Orders in Nuvolo serve as the central mechanism for tracking, managing, and documenting maintenance activities on medical equipment. Whether it’s scheduled preventive maintenance (PM), corrective repair, or incoming inspection, each task is initiated and recorded through a work order. Nuvolo provides a standardized digital platform, integrated with the VA’s ServiceNow system, that helps biomedical engineers and technicians capture essential details such as equipment ID, location, service dates, labor time, and parts used. This ensures regulatory compliance, accurate performance metrics, and consistent communication across facilities. In short, work orders in Nuvolo are the backbone of the VA’s equipment lifecycle management, ensuring safe, reliable operation of medical devices across the healthcare system.</p>
+      <ol>
+        <li>Reference your pinned Favorites Bar on the left-hand side of your browser
+          <img alt="Screenshot of pinned Favorites Bar on the left-hand side, showing Home, Clinical Asset Management, Clinical Asset Management Admin" src="">
+        </li>
+        <li>Select “Clinical Asset Management”
+          <img alt="Screenshot of selecting Clinical Asset Management in the Favorites Bar" src="">
+        </li>
+        <li>Scroll down the list until you see “Work Orders”
+          <img alt="Screenshot of expanded Clinical Asset Management list highlighting Work Orders" src="">
+        </li>
+        <li>Select “Work Orders” (select the 2nd Work Orders if you have two options)
+          <img alt="Screenshot of selecting the second Work Orders option if two are present" src="">
+        </li>
+        <li>Confirm you see the following options in your sub-list:
+          <img alt="Screenshot of Work Orders sub-list: New Work Order, All non-PM, All PM, Open/Pending, My Work Orders, My Groups Work Orders, My Work Orders On Hold, My Groups Unassigned W..., My Groups Work Orders ..." src="">
+          <p>As you can see in this sub-list, you are able to handle all Work Order matters within this list. You have the ability to view all PM and non-PM Work Orders, view Open/Pending Work Orders, view specific Work Orders assigned to you, and view Work Orders assigned to your group. Additionally, you have the ability to create a new Work Order.</p>
+        </li>
+      </ol>
 
-    <h3>Part 7: Scavenger Hunt</h3>
-    <p>Use your profile, preferences, dashboards, Favorites bar, and Clinical Asset Management to explore Nuvolo and answer the following:</p>
-    <ol>
-      <li>How would you find the dashboard titled “HTM – My Open PM List”?</li>
-      <li>Who owns the dashboard titled “HTM – My Open PM List”?</li>
-      <li>What are the 4 available options under the <em>Safety &amp; Recall Alerts</em> list?</li>
-      <li>On what tab can you see upcoming and assigned PMs?</li>
-      <li>What is the number value for <em>Overall Working Capacity</em> of <em>Facility Name: HTM, Description: HTM Program Office</em>? (Hint: look for “organizations and spaces”)</li>
-      <li>What are the first 5 value columns within <em>My Work Orders</em>?</li>
-      <li>Where can you go to change your time zone?</li>
-      <li>Where can you see a list of all dashboards?</li>
-      <li>Under <strong>Favorites</strong>, where does <strong>Home</strong> take you?</li>
-      <li>Change one of your Favorites to the color purple.</li>
-    </ol>
-  </section>
+      <h3>Part 2: Creating a New Work Order</h3>
+      <p>Now we will dive into the steps that you need to take to create a Work Order. We will only be highlighting the most important or required portions of the Work Order you will need to complete. However, when going through the lab, please take the time to complete all of the fields within the Work Order form. It will help your confidence in using the system and provide more detailed Work Orders in the future!</p>
+      <ol>
+        <li>Select “New Work Order”
+          <img alt="Screenshot of selecting New Work Order in the sub-list" src="">
+        </li>
+        <li>Confirm you see the following screen (note: this is not the entirety of the page):
+          <img alt="Screenshot of New Work Order form with fields like Number, Due Date, Work Order Type, Asset, Asset Type, Priority, Work Order Summary, Brief Description" src="">
+        </li>
+        <li>Let's familiarize ourselves with some of the required fields within a Work Order</li>
+        <li>Select a Due Date using the calendar icon (Notice this auto-populates! No action is needed)</li>
+        <li>Select a Work Order Type using the magnifying glass icon</li>
+        <li>Select the Asset Type using the magnifying glass icon</li>
+        <li>Select a Priority level</li>
+        <li>Write a brief Work Order Summary</li>
+      </ol>
+      <p>These are the required fields that you must complete prior to moving to the next step of the Work Order. With that in mind, let's dive in and write an entire Work Order. Provide as much detail as possible – the expectation is that you fill out every field, not just the required ones. The extra detail is crucial for proper documentation.</p>
+
+      <h3>Part 3: Create Your Own Work Order</h3>
+      <ol>
+        <li>Create your own work order. This Work Order is <strong>completely hypothetical!</strong> Have fun with it, and use it as an opportunity to familiarize yourself with the Work Order Document. Document the following information and be prepared to share with the class:
+          <ol type="a">
+            <li>Due Date</li>
+            <li>Number</li>
+            <li>Work Order Type</li>
+            <li>Asset – should be asset-based workorder
+              <ol type="i">
+                <li>Show the magnifying glass next to the “Asset” so they can filter things down</li>
+              </ol>
+            </li>
+            <li>Asset Type – this auto populates when you select the asset!</li>
+            <li>Priority</li>
+            <li>Work Order Summary</li>
+            <li>Brief Description</li>
+          </ol>
+        </li>
+        <li>Next, the Work Order needs to be assigned to a technician. Select “Pending Assignment” once all of your Work Order fields are complete
+          <ol type="a">
+            <li>If you double-click on the “Ready for Work”, it automatically moves it to the next state and saves</li>
+            <li></li>
+          </ol>
+        </li>
+        <li>Once the new page has loaded, explore the page and find the text field labeled “Assigned To.” Using this text field, assign yourself as the technician for this Work Order.</li>
+        <li>Once you have assigned yourself as the technician, select “Ready for Work”</li>
+        <li>Now select “Save”</li>
+      </ol>
+      <p>Congratulations! You have just created your first Nuvolo Work Order and assigned a technician to perform the work. You might be thinking, “Great, but where can someone go to view the Work Order that was just created?” Well today is your luck day – now we are going to explore how to view an open/existing work order!</p>
+
+      <h3>Part 4: Viewing an Open Work Order</h3>
+      <ol>
+        <li>Have the documentation easily available from the Work Order you just created, namely, the following:
+          <ol type="a">
+            <li>Number</li>
+            <li>Assigned To</li>
+            <li>Work Order Summary</li>
+          </ol>
+        </li>
+        <li>In your Favorites Bar, select “Open/Pending” under Work Orders
+          <img alt="Screenshot of selecting Open/Pending in the Work Orders sub-list" src="">
+        </li>
+        <li>Everyone’s screen will probably look different here. This is due to the fact that everyone may see different data depending on what filters are automatically applied to your account (VISN, Facility, etc.). That’s okay! To ensure you’ve landed on the correct page, at least confirm that the top of your page looks like this:
+          <img alt="Screenshot of the top of the Open/Pending Work Orders page with filter button" src="">
+        </li>
+        <li>In that image lies a very important button... any guesses?</li>
+        <li>The filter button! Select the filter button
+          <img alt="Screenshot highlighting the filter button" src="">
+        </li>
+      </ol>
+      <div class="callout">***Brief pause to discuss filters*** Focus on Dynamic filters – see how we set our Ward earlier, this is why that’s SO important.</div>
+      <ol start="6">
+        <li>Try playing around with different filter options to find the Work Order you just created
+          <ol type="a">
+            <li>Hint 1: The Work Order is ACTIVE</li>
+            <li>Hint 2: The Work Order is very easy to find when you filter by WHO it is assigned to</li>
+            <li>Hint 3: Don’t forget to select “Run” after your filters are applied!</li>
+          </ol>
+        </li>
+        <li>Find the Work Order you created and select it by clicking on the Number</li>
+      </ol>
+      <p>Congratulations! You have now successfully created a Work Order, assigned a technician, learned how to apply filters, and found your Work Order.</p>
+      <p>I’m sure there are plenty of questions, so let’s spend some time answering any questions you guys have.</p>
+      <p>Scenario-based activity? Find a partner work-order, find an easter egg workorder, etc.</p>
+    </section>
+
+    <section class="lab-section" data-lab="Lab 3">
+      <h2>Lab 3: Preventative Maintenance</h2>
+
+      <h3>Part 1: Introduction to Preventative Maintenance</h3>
+      <p>The good news about Preventative Maintenance within Nuvolo is that it is very similar to writing any style of Work Order! You may actually notice a large amount of overlap between this lab and Lab 2. You will have another chance create a Work Order; except this time we will exclusively be focusing on a Preventative Maintenance Work Order. Keep in mind, most of your PM Work Orders will NOT be manually created. But we will manually create one today to reinforce Work Order training, and to provide you insight into the details that make up a PM Work Order.</p>
+      <ol>
+        <li>Reference your Favorites Bar
+          <img alt="Screenshot of Favorites Bar showing Home, Clinical Asset Management, Clinical Asset Management Admin, Self-Service - Dashboards, ITIL User Dashboard" src="">
+        </li>
+        <li>In the Search Bar, type “Work Orders”
+          <img alt="Screenshot of Favorites Search Bar with 'Work Orders' typed, showing matching items like My Work Order Boards, Work Orders, New Work Order, All non-PM, All PM, etc." src="">
+        </li>
+        <li>Select “New Work Order”
+          <img alt="Screenshot highlighting 'New Work Order' in the list" src="">
+        </li>
+        <li>This page should look familiar! We are back on a page that allows us to create a new work order. Reference the “Work Order Type” text field
+          <img alt="Screenshot of New Work Order form highlighting the Work Order Type field" src="">
+        </li>
+        <li>Select the magnifying glass icon
+          <img alt="Screenshot close-up of magnifying glass icon next to Work Order Type" src="">
+        </li>
+        <li>Confirm you see the following list of Work Order Types
+          <img alt="Screenshot of popup list: Corrective Maintenance, Decommission, Disposal, Incoming Inspection, Installation, Preventative Maintenance, Recall, Relocation, Safety Testing" src="">
+        </li>
+        <li>Select “Preventative Maintenance”</li>
+        <li>On your New Work Order form, you will now see “Preventative Maintenance” as the Work Order Type
+          <img alt="Screenshot of New Work Order form with Work Order Type set to Preventative Maintenance" src="">
+        </li>
+        <li>Let's complete the rest of the Work Order form similarly to how you completed a Work Order in Lab 2. Select the magnifying glass icon for the “Asset” text field</li>
+        <li>From here, complete the following steps to finish Part 1 of the Lab:
+          <ol type="a">
+            <li>Select an Asset Type of your choosing</li>
+            <li>Select a Due Date</li>
+            <li>Select a Priority</li>
+            <li>Complete the “Work Order Summary”</li>
+            <li>Select “Draft” on the Work Order Form</li>
+            <li>Record the “Assignment Group” that gets generated</li>
+            <li>Record the “Assigned To” technician that gets generated</li>
+            <li>Record the Work Order Number</li>
+          </ol>
+        </li>
+        <li>Congratulations! You have just created a Draft of a manually generated Preventative Maintenance Work Order. We’re far from done though… next, we need to be able to find and access this Work Order.</li>
+      </ol>
+
+      <h3>Part 2: Finding and Accessing Active PM Work Orders</h3>
+      <ol>
+        <li>Reference your Favorites Bar</li>
+        <li>In the Search Bar, type “PM”
+          <img alt="Screenshot of Favorites Search Bar with 'PM' typed, showing All PM, All non-PM, etc." src="">
+        </li>
+        <li>Select “All-PM”</li>
+        <li>Let’s take a look at the filters that come pre-assigned on the “All PM” page
+          <img alt="Screenshot of All PM page showing pre-assigned filters like Active is true, Assignment group is javascript&colon;getMyGroups()" src="">
+          <ol type="a">
+            <li>These conditions are pre-assigned to this tab to help you easily find data and present you PM Work Orders based on your assigned role, facility, user permissions, etc.</li>
+          </ol>
+        </li>
+        <li>To reference the specific PM Work Order you just created in step one, let's add a filter. Select the “AND” button
+          <img alt="Screenshot of filter section highlighting the AND button" src="">
+        </li>
+        <li>Configure your next filter to read as “Assigned To... is”</li>
+        <li>Use the magnifying glass icon to find the name of the technician that the Work Order was assigned to
+          <img alt="Screenshot of filter set to Assigned to is [specific user]" src="">
+        </li>
+        <li>That is one way to find the specific Work Order you just created. Let's take some time to explore some other ways to find that Work Order. Use other filter options based on what you know about your Work Order to find the same Work Order you created in part 1.</li>
+        <li>Now that you've spent some time experimenting with filters, it's time to show you the Global Search feature. This will allow you to reference any Work Order immediately (if you have the Work Order #).</li>
+        <li>Remember the Work Order number you recorded in Part 1? Keep that handy. Reference the top of your browser
+          <img alt="Screenshot of top bar with global search magnifying glass icon" src="">
+        </li>
+        <li>Select the Magnifying Glass Icon</li>
+        <li>Type in the exact Work Order Number you had created in Part 1
+          <ol type="a">
+            <li>As long as you saved the Work Order as a Draft, and typed the Work Order number in correctly, you should see “EXACT MATCH” in the search results</li>
+          </ol>
+        </li>
+      </ol>
+      <p>Now that we've created a PM Work Order and discovered how to find them, let's recap some key information.</p>
+      <ul>
+        <li>In general, you will not need to manually create PM Work Orders. We manually created a PM Work Order in this lab to allow you more hands-on experience with Work Orders and to have a specific reference for follow-on lab use.</li>
+        <li>Filters are a great way to find specific batches of data, to include Work Orders. Selecting the correct tab (in this instance, “All PM”) will come with pre-assigned filters to automatically show you data that applies to your specific Nuvolo account. If you want to alter the data that is being shown, feel free to play around with filters to meet your specific needs.</li>
+        <li>The Global Search Function is the single best way to find specific data within Nuvolo. If you have a Work Order, Asset, etc. you can use the Global Search Function to reference that item</li>
+      </ul>
+
+      <h3>Part 3: What if Preventative Maintenance turns into Corrective Maintenance?</h3>
+      <p>Okay close your eyes and picture this: You are scheduled to complete standard Preventative Maintenance on a piece of equipment. You start your PM check and realize that the equipment is broken and will require more work than the standard PM. What should you do?</p>
+      <ol>
+        <li>Ignore the problem</li>
+        <li>Upgrade the PM Work Order to a Corrective Maintenance Work Order</li>
+      </ol>
+      <p>Hopefully you selected number 2!</p>
+      <p>Let's walk through that scenario.</p>
+      <ol>
+        <li>Let's say work is In Progress for a PM Work Order. Your Work Order page will look similar to the following:
+          <img alt="Screenshot of Work Order page in Work in Progress state for a PM Work Order" src="">
+        </li>
+        <li>If you’ve decided that this PM Work Order need to be elevated to a CM Work Order, reference the top of your browser</li>
+        <li>Select “Create CM Work Order”
+          <img alt="Screenshot highlighting 'Create CM Work Order' button at the top" src="">
+        </li>
+        <li>Notice the major difference in this new Work Order Page that has loaded:
+          <img alt="Screenshot of new CM Work Order page showing changes in step, state, number, and type" src="">
+          <ol type="a">
+            <li>Note the following changes:
+              <ol type="i">
+                <li>The step of the Work Order shifted back to “Assigned”</li>
+                <li>The state of the Work Order shifted to “Ready for Work” rather than “Work in Progress”</li>
+                <li>The Work Order Number changed (+1 from the original PM Work Order Number)</li>
+                <li>The Work Order Type changed to corrective maintenance (changed from preventative maintenance)</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <p>Now let’s say this entire Work Order has become a very high-visibility issue. As the technician, supervisor, etc. you want the ability to specifically follow this Work Order. It started as a standard PM, and now it’s a troublesome CM issue. You need continuous updates on this Work order.</p>
+      <ol>
+        <li>Reference the top of your page</li>
+        <li>Select the “Follow” button
+          <img alt="Screenshot highlighting the Follow button on the Work Order page" src="">
+        </li>
+        <li>You will get the following message on your Work Order page
+          <img alt="Screenshot showing message 'You are now following this record'" src="">
+        </li>
+        <li>Now let's reference your notifications. Select the notifications icon (the bell)
+          <img alt="Screenshot of top bar highlighting the bell notifications icon" src="">
+        </li>
+        <li>Confirm you see the following notifications tab:
+          <img alt="Screenshot of notifications dropdown tab" src="">
+        </li>
+        <li>Use the settings icon to customize notifications as desired</li>
+      </ol>
+      <p>Okay, maybe that felt like a lot! But now you know how to</p>
+      <ul>
+        <li>Manually generate a PM Work Order</li>
+        <li>Find and filter for PM Work Orders (and any type of Work Order)</li>
+        <li>Search for specific Work Orders via Global Search Function</li>
+        <li>Elevate a PM Work Order to a CM Work Order</li>
+        <li>Follow and track a Work Order</li>
+      </ul>
+      <p>You're well on your way to being a Nuvolo pro!</p>
+    </section>
+
+    <section class="lab-section" data-lab="Lab 4">
+      <h2>Lab 4: Asset Management</h2>
+      <p>Mostly everything we've talked about so far has been centered around Work Orders – how to create them, how to view them, how to upgrade them, etc. You're probably tired of talking about Work Orders. So let's move on to another core pillar of your day-to-day Nuvolo use: Asset Management. Asset Management is all about onboarding new medical devices, new parts, and new asset types. In this lab, we're going to walk through how to onboard a new device, how to reference that device, and any other fundamental techniques that will help you with asset management.</p>
+
+      <h3>Part 1: Finding Equipment and Asset Management Familiarization</h3>
+      <ol>
+        <li>Much like any other task on Nuvolo, let's start by referencing your Favorites Bar
+          <img alt="Screenshot of Favorites Bar showing Home, Clinical Asset Management, Clinical Asset Management Admin, Self-Service - Dashboards, ITIL User Dashboard" src="">
+        </li>
+        <li>Type “Inventory” into your Search Bar
+          <img alt="Screenshot of Favorites Search Bar with 'Inventory' typed" src="">
+        </li>
+        <li>Confirm you see the following menu:
+          <img alt="Screenshot of Inventory menu: Models, New Asset Type, New Part Type, New Device, New Part, New Material, Asset Types, Part Types, Devices, Unverified Devices/Pre-Val., Parts, Materials, Cerner Compatible Devices" src="">
+        </li>
+        <li>Let's pause for a moment and digest some of the options we have to help us perform Asset Management within Nuvolo. You have the ability to create new Asset Types (depending on your role and permissions), add new Part Types, add new devices, references parts and devices, view locations, verify compatibility, and much more.</li>
+        <li>Let's start by clicking on "Models"</li>
+        <li>You should see a list of data containing models, manufacturers, model numbers, and more.
+          <img alt="Screenshot of Models list page showing columns like Model, Manufacturer, Model Number, etc." src="">
+        </li>
+        <li>If you notice at the bottom of this page, you will see there are hundreds of thousands of results – not exactly helpful if you’re trying to reference specific equipment</li>
+        <li>Here is where our filter button comes in handy. Click on the filter button at the top of the page</li>
+        <li>Let’s say you only want to see equipment from a specific manufacturer – let’s assign filters to make that happen. Assign your filter to read: “Manufacturer” and “is”</li>
+        <li>You now can look up equipment based solely on manufacturer. Let’s take a second to play around with these filter options. Explore the list of options and familiarize yourself with helpful data filters.</li>
+        <li>Let’s quickly put your data filtering abilities to the test. Perform the following steps and record the Equipment Number
+          <ol type="a">
+            <li>You want to find a specific piece of equipment and you know the following information:
+              <ol type="i">
+                <li>Asset Type: CARTS: MEDICATION/STORAGE: POWERED</li>
+                <li>Manufacturer: HOWARD MEDICAL</li>
+                <li>Model Name: PARADIGM</li>
+                <li>What is the equipment number?</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>You should have gotten the number: CMOD0118262</li>
+        <li>Now that you have a specific equipment number... let's say you wanted to access this equipment on Nuvolo again, but this time you know the exact equipment number... what feature could you use to directly search it?</li>
+        <li>I hope you said... Global Search Function! Type in CMOD0118262 into your Global Search Function at the top of your browser</li>
+        <li>Click "View Results"</li>
+        <li>You should see the following page:
+          <img alt="Screenshot of global search results page showing 1 result for CMOD0118262" src="">
+        </li>
+        <li>Select the 1 result and you should see the following page:
+          <img alt="Screenshot of equipment details page for CMOD0118262 showing Equipment Number, Model Name, Manufacturer, Asset Type, ID, Price, Compatibility, etc." src="">
+        </li>
+        <li>In this lab, we are only referencing this one particular piece of equipment that I randomly selected. But imagine you reference this page about equipment at your facility. On this page you should be able to see:
+          <ol type="a">
+            <li>Equipment Number</li>
+            <li>Model Name</li>
+            <li>Manufacturer</li>
+            <li>Asset Type</li>
+            <li>ID</li>
+            <li>Price</li>
+            <li>Compatibility</li>
+            <li>Any relevant and useful information you would want to know about any piece of equipment</li>
+          </ol>
+        </li>
+      </ol>
+      <p>So now you've identified how to filter for different equipment, how to search specific equipment if you have the right number, and familiarized yourself with the functions of an equipment page.</p>
+    </section>
+
+    <section class="lab-section" data-lab="Lab 5">
+      <h2>Lab 5: Device Verification and PM Definitions</h2>
+
+      <h3>Part 1: Device Verification</h3>
+      <p>Device Verification is a crucial task for Managers and Administrators within Nuvolo. This is a manual step that needs to occur in order to generate applicable Preventative Maintenance Work Orders. Performing proper device verification ensures that maintenance is being conducted within proper standards. Let’s walk you through the steps of how to manually verify those devices!</p>
+      <ol>
+        <li>Like the first step in all great Nuvolo activities, reference your Favorites Bar
+          <img alt="Screenshot of Favorites Bar showing Home, Clinical Asset Management, Clinical Asset Management Admin, Self-Service - Dashboards, ITIL User Dashboard" src="">
+        </li>
+        <li>In the Search Bar, type “unverified devices”
+          <img alt="Screenshot of Favorites Search Bar with 'unverified devices' typed, showing Unverified Devices/Pre-Valid." src="">
+        </li>
+        <li>Select “Unverified Devices”
+          <img alt="Screenshot highlighting 'Unverified Devices/Pre-Valid.' in the list" src="">
+        </li>
+        <li>Everyone’s page will look slightly different here – this page shows you a list of potentially unverified devices attached to your Nuvolo profile (based on facility, VISN, etc.) Take note of some of the column headers: Asset Tag, Asset Manufacturer, Asset Model Name, etc.
+          <img alt="Screenshot of Unverified Devices page with columns Asset Tag, Asset Manufacturer, Asset Model Name, etc." src="">
+        </li>
+        <li>We will need to ADD a very important column header. We are going to add “verified” as a column header to see the true/false value for whether or not these devices are verified. Click on the settings/gear icon in the top right of your browser
+          <img alt="Screenshot highlighting the gear icon in the top right" src="">
+        </li>
+        <li>Confirm you see the following pop-up
+          <img alt="Screenshot of Personalize List Columns popup with Available and Selected lists" src="">
+        </li>
+        <li>In the “available” list (the list on the left side), scroll down until you see “Verified”
+          <img alt="Screenshot of Available list highlighting 'Verified'" src="">
+        </li>
+        <li>Click on “Verified”
+          <img alt="Screenshot showing 'Verified' selected" src="">
+        </li>
+        <li>After you have clicked on Verified, it should be highlighted in gray. Next, click the “>” icon to move it into the “selected” list (the list on the right)
+          <img alt="Screenshot highlighting the '>' icon" src="">
+        </li>
+        <li>Then click “OK”
+          <img alt="Screenshot highlighting 'OK' button" src="">
+        </li>
+        <li>Next, click on “verified” in the “selected” column and highlight it gray. Then click on the “^” icon to move it up the list until it is right above “Serial Number”
+          <img alt="Screenshot showing 'verified' selected and '^' icon" src="">
+        </li>
+        <li>Next, select “OK”
+          <img alt="Screenshot highlighting 'OK' button again" src="">
+        </li>
+        <li>Confirm you see a “verified” column
+          <img alt="Screenshot of table with 'verified' column added" src="">
+        </li>
+        <li>Click on the first device on your list (it will be different than what mine is displaying). You can select the device by clicking on the “Asset Tag” number
+          <img alt="Screenshot highlighting an Asset Tag in the table" src="">
+        </li>
+        <li>Confirm you see a page similar to this:
+          <img alt="Screenshot of device details page" src="">
+        </li>
+        <li>Verify all information is correct – do not check the verified box if the information is incorrect.
+          <ol type="a">
+            <li>See slide deck</li>
+            <li>Resources Tab specifically
+              <ol type="i">
+                <li>At minimum: All Groups need to be filled
+                  <ol type="1">
+                    <li>Call out Support Group top right</li>
+                  </ol>
+                </li>
+                <li>Local discretion on specific person, but should be filled in during this lab</li>
+                <li>Ignore Clinical Owner & Managed By & Business Schedule</li>
+                <li>EHRM – Cerner Compatible. If it will someday connect to Cerner, then you should select this</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>After verifying correct information, click the “Verified” check box
+          <img alt="Screenshot highlighting 'Verified' checkbox" src="">
+        </li>
+        <li>Then click “update”
+          <img alt="Screenshot highlighting 'Update' button" src="">
+        </li>
+        <li>Awesome, you have just verified a device! Now, this will automatically trigger and Incoming Inspection Work Orders or Preventative Maintenance Work Orders.</li>
+      </ol>
+      <p>A few follow up questions:</p>
+      <ol>
+        <li>What tab could you use in your favorites bar to confirm that you just verified a device?
+          <ol type="a">
+            <li>The “device” tab</li>
+          </ol>
+        </li>
+        <li>What Function could you use to search that same device if you had the asset tag?
+          <ol type="a">
+            <li>Global Search Function</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h3>Part 2: Maintenance Definitions</h3>
+      <p>Let’s talk about maintenance definitions – how to view them, create them, maintain them, and deactivate them. Maintenance definitions are critical for ensuring clinical devices are routinely inspected and maintain compliance.</p>
+      <ol>
+        <li>Let’s create a maintenance definition. Select “All” at the top of your browser (you may also use your Favorites Bar for this step)
+          <img alt="Screenshot of top bar showing 'All'" src="">
+        </li>
+        <li>Search “Maintenance Definitions” in the Search Bar
+          <img alt="Screenshot of search bar with 'Maintenance Definitions'" src="">
+        </li>
+        <li>Select “Maintenance Definitions”
+          <img alt="Screenshot highlighting 'Maintenance Definitions'" src="">
+        </li>
+        <li>Confirm you see the following page with the following pre-set filter:
+          <img alt="Screenshot of Maintenance Definitions page with filter" src="">
+        </li>
+        <li>This page contains a list of all maintenance definitions under the pre-set filter “Facility… is (dynamic)… HTM Manage Devices.” To create a New Maintenance Definition, click “New” in the top right corner of the page
+          <img alt="Screenshot highlighting 'New' button" src="">
+        </li>
+        <li>Confirm you see the following page:
+          <img alt="Screenshot of New Maintenance Definition form" src="">
+        </li>
+        <li>Now I want you to create a maintenance definition for a specific Asset Model in a facility using some parameters listed below:
+          <ol type="a">
+            <li>Name: VISN # - TLA – Risk – Work Order Type – Model Name – Frequency</li>
+            <li>Asset Condition: this sets the criteria for which devices will be covered by the definition – pick something applicable to you or your facility
+              <ol type="i">
+                <li>DO NOT USE “IS” - choose contains, starts with, ends with.</li>
+                <li>IS has to be an exact match</li>
+              </ol>
+            </li>
+            <li>Schedule: the frequency of the definition that will apply to your device(s)</li>
+            <li>Work Order Type: Preventative Maintenance is a good pick here – it makes sense to have a recurring frequency when it is based around PM definitions</li>
+            <li>Generation Type: keep recurring selected – this will create a definition based on the schedule that is applied</li>
+            <li>Work Order Summary: use the same exact thing you used for “Name”</li>
+            <li>Start Date: use the first day of the month for any frequency of monthly or higher per national guidance</li>
+            <li>Maintenance Source: Manufacturer or AEM based on compliance with TJC</li>
+            <li>Facility: used for reporting purposes</li>
+            <li>Asset Type: used for reporting purposes</li>
+            <li>Model: used for reporting purposes</li>
+          </ol>
+        </li>
+        <li>Click Save at the top right when you’re done</li>
+        <li>Once you have clicked “save” you will notice a new option to click “activate.” Click on “activate” once you are ready for the maintenance definition to go live</li>
+        <li>Great! Now you’ve learned how to create maintenance definitions for various devices based on your asset conditions.</li>
+        <li>Now let’s talk about managing these maintenance definitions… does anyone know the two scenarios in which a technician may need to manually generate a PM Work Order form a definition?
+          <ol type="a">
+            <li>New Asset without a matching definition</li>
+            <li>New Activation</li>
+          </ol>
+        </li>
+        <li>To perform this, open an existing maintenance definition. Search “Maintenance Definitions” in your Favorites search bar</li>
+        <li>Select “Maintenance Definitions”
+          <img alt="Screenshot highlighting 'Maintenance Definitions'" src="">
+        </li>
+        <li>Select “New” at the top right of the browser
+          <img alt="Screenshot highlighting 'New'" src="">
+        </li>
+        <li>You will need to create a second maintenance definition for the same asset conditions – but there will be one key difference with this maintenance definition. You want to manually generate a Work Order now... what field will be different than the last maintenance definition we created?</li>
+        <li>If you guessed “Generation Type = Generate Now” then you were correct!
+          <img alt="Screenshot showing Generation Type set to Generate Now" src="">
+        </li>
+        <li>Rather than a recurring set of preventive maintenance Work Orders on a recurring frequency, you will generate a one-time Work Order for the devices covered under your asset conditions.</li>
+        <li>Try it out! Create the same exact Maintenance Definition, but instead of making it a recurring definition, make it a Generate Now definition.</li>
+      </ol>
+    </section>
+
+    <section class="lab-section" data-lab="Lab 6">
+      <h2>Lab 6: Scheduling and Rates</h2>
+
+      <h3>Part 1: Technician Schedules</h3>
+      <p>The last thing we will cover in this lab is creating a technician schedule. Each technician should have a main schedule. Let’s walk through the steps of creating a technician schedule.</p>
+      <ol>
+        <li>In your Favorites Search Bar, type “schedule”
+          <img alt="Screenshot of Favorites Search Bar with 'schedule' typed, showing Scheduled Maintenance, Recurrence Frequencies, Maintenance Definitions, Asset Maintenance Instances, Technician Schedule, etc." src="">
+        </li>
+        <li>Select "Technician Schedule"
+          <img alt="Screenshot highlighting 'Technician Schedule' in the list" src="">
+        </li>
+        <li>Confirm you see the following page with the following pre-set filter:
+          <img alt="Screenshot of Technician Schedule page with pre-set filter Active is true" src="">
+        </li>
+        <li>This is a list of all active technicians who have a created technician profile within Nuvolo</li>
+        <li>In the top right of the page, let's click "New" to create a new schedule for a technician
+          <img alt="Screenshot highlighting 'New' button" src="">
+        </li>
+        <li>Confirm you see the following page:
+          <img alt="Screenshot of New Technician Schedule form with fields Name, Technician, Schedule Type, Description" src="">
+        </li>
+        <li>Let's create a new Clinical Technician Schedule using my name:
+          <ol type="a">
+            <li>Name: Riley Brosnan</li>
+            <li>Technician: Riley Brosnan (VHAHAMBROSNR)</li>
+            <li>Schedule Type: Shift</li>
+            <li>Description: VHA HTM PO</li>
+          </ol>
+        </li>
+        <li>Now click submit</li>
+        <li>You will be brought back to the list of all Technician Schedules. Using the search bar at the top of the page, search "Riley Brosnan"</li>
+        <li>You should see the schedule you just created at the top of the list:
+          <img alt="Screenshot of search results showing Riley Brosnan schedule" src="">
+        </li>
+        <li>Select “Riley Brosnan” and you should see the following page:
+          <img alt="Screenshot of Riley Brosnan schedule details page" src="">
+        </li>
+        <li>Next, click the tab “schedule entries”
+          <img alt="Screenshot highlighting 'schedule entries' tab" src="">
+        </li>
+        <li>Now click “New” to create a new schedule entry
+          <img alt="Screenshot highlighting 'New' button in schedule entries" src="">
+        </li>
+        <li>Fill out the following fields with the listed parameters
+          <ol type="a">
+            <li>Name: Riley's Monday - Friday</li>
+            <li>Type: -- None --</li>
+            <li>Show as: busy</li>
+            <li>When: Today's Date and the work hours of your technician</li>
+            <li>Repeats: Every Weekday (Mon-Fri)</li>
+            <li>Repeat until: Leave Blank</li>
+            <li>Type: Leave Blank</li>
+          </ol>
+        </li>
+        <li>Click Submit or Update (depending on whether this is a new record or an update to an existing schedule)</li>
+        <li>Now you should see an added schedule entry under the technician's name:
+          <img alt="Screenshot showing added schedule entry" src="">
+        </li>
+        <li>You have now created a regularly scheduled work week for your technician. This is crucial because it will allow your technician to be automatically assigned work orders throughout the week.</li>
+      </ol>
+
+      <h3>Part 2: Rates</h3>
+      <p>Let's make sure you know how to accurately view and update your technician's pay rates within Nuvolo. This ensures proper record keeping to see how much labor cost is being put into specific devices. It will help make decisions on device maintenance and upkeep versus device replacement.</p>
+      <ol>
+        <li>Navigate to your Favorites Bar and search “rates”
+          <img alt="Screenshot of Favorites Search Bar with 'rates' typed" src="">
+        </li>
+        <li>Select “Internal Employee Rates”
+          <img alt="Screenshot highlighting 'Internal Employee Rates'" src="">
+        </li>
+        <li>This page will generate a list of technicians and information like their yearly pay, employee name, facility, locality, GS/step, and more. Let’s click on the filter button in the top left corner of the page
+          <img alt="Screenshot highlighting filter button" src="">
+        </li>
+        <li>Set your filters to any parameter that best helps you – for now, let’s use facility and filter to the Wilmington, DE facility
+          <img alt="Screenshot of filter set to Facility is Wilmington, DE" src="">
+        </li>
+        <li>Now you can see the yearly and hourly labor rate per employee. Again, this is helpful for reporting metrics – you can see how much labor cost goes into specific devices. But let’s say you need to add a new employee and enter their pay rate info. Select “New” at the top right corner of the page.
+          <img alt="Screenshot highlighting 'New' button" src="">
+        </li>
+        <li>Using me again, let’s create an employee rate using the following parameters
+          <ol type="a">
+            <li>Employee: Riley Brosnan (VHAHAMBROSNR)</li>
+            <li>Position Entry Date: Today’s Date</li>
+            <li>Fill in the rest of the information fields with information of your choosing</li>
+            <li>Just note that you do want this information to be as accurate as possible for real-world application – when you make one of these records for an actual technician, ensure the labor rate, yearly pay, facility, locality, Grade, and Step are accurate</li>
+          </ol>
+        </li>
+        <li>Select “Save” or “Update” and you’re good to go!</li>
+      </ol>
+      <p>That probably felt like a lot of information. We discussed a lot of admin responsibilities that will serve you well within Nuvolo. You learned how to create maintenance definitions, view and track employee rates, and create technician schedule entries. These are some core functions that will help you manage a team and devices within Nuvolo.</p>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>HTM251 Labs • Agile Project Management Fundamentals</p>
+    <p>&copy; 2026 HTM251 Lab Materials</p>
   </footer>
 
   <script>
-    // Theme toggle
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('change', () => {
-      document.body.classList.toggle('dark', toggle.checked);
-      document.body.classList.toggle('light', !toggle.checked);
-    });
-
-    // Lab filter (only Lab 1 for now, but keeps structure if you add more labs later)
     function filterLabs() {
-      const val = document.getElementById('labFilter').value;
-      document.querySelectorAll('.lab-section').forEach(sec => sec.classList.remove('active'));
-      if (val) { document.getElementById(val).classList.add('active'); }
+      const select = document.getElementById('labFilter');
+      const value = select.value;
+      const sections = document.querySelectorAll('.lab-section');
+      sections.forEach(section => {
+        section.classList.toggle('active', section.dataset.lab === value || value === '');
+      });
     }
+
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark', themeToggle.checked);
+      document.body.classList.toggle('light', !themeToggle.checked);
+    });
   </script>
 </body>
 </html>
