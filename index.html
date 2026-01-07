@@ -582,253 +582,37 @@
       <p>So now you've identified how to filter for different equipment, how to search specific equipment if you have the right number, and familiarized yourself with the functions of an equipment page.</p>
     </section>
 
-    <section class="lab-section" data-lab="HTM151: Lab 15">
-      <h2>Lab 5: Device Verification and PM Definitions</h2>
-
-      <h3>Part 1: Device Verification</h3>
-      <p>Device Verification is a crucial task for Managers and Administrators within Nuvolo. This is a manual step that needs to occur in order to generate applicable Preventative Maintenance Work Orders. Performing proper device verification ensures that maintenance is being conducted within proper standards. Let’s walk you through the steps of how to manually verify those devices!</p>
-      <ol>
-        <li>Like the first step in all great Nuvolo activities, reference your Favorites Bar
-          <img alt="Screenshot of Favorites Bar showing Home, Clinical Asset Management, Clinical Asset Management Admin, Self-Service - Dashboards, ITIL User Dashboard" src="">
-        </li>
-        <li>In the Search Bar, type “unverified devices”
-          <img alt="Screenshot of Favorites Search Bar with 'unverified devices' typed, showing Unverified Devices/Pre-Valid." src="">
-        </li>
-        <li>Select “Unverified Devices”
-          <img alt="Screenshot highlighting 'Unverified Devices/Pre-Valid.' in the list" src="">
-        </li>
-        <li>Everyone’s page will look slightly different here – this page shows you a list of potentially unverified devices attached to your Nuvolo profile (based on facility, VISN, etc.) Take note of some of the column headers: Asset Tag, Asset Manufacturer, Asset Model Name, etc.
-          <img alt="Screenshot of Unverified Devices page with columns Asset Tag, Asset Manufacturer, Asset Model Name, etc." src="">
-        </li>
-        <li>We will need to ADD a very important column header. We are going to add “verified” as a column header to see the true/false value for whether or not these devices are verified. Click on the settings/gear icon in the top right of your browser
-          <img alt="Screenshot highlighting the gear icon in the top right" src="">
-        </li>
-        <li>Confirm you see the following pop-up
-          <img alt="Screenshot of Personalize List Columns popup with Available and Selected lists" src="">
-        </li>
-        <li>In the “available” list (the list on the left side), scroll down until you see “Verified”
-          <img alt="Screenshot of Available list highlighting 'Verified'" src="">
-        </li>
-        <li>Click on “Verified”
-          <img alt="Screenshot showing 'Verified' selected" src="">
-        </li>
-        <li>After you have clicked on Verified, it should be highlighted in gray. Next, click the “>” icon to move it into the “selected” list (the list on the right)
-          <img alt="Screenshot highlighting the '>' icon" src="">
-        </li>
-        <li>Then click “OK”
-          <img alt="Screenshot highlighting 'OK' button" src="">
-        </li>
-        <li>Next, click on “verified” in the “selected” column and highlight it gray. Then click on the “^” icon to move it up the list until it is right above “Serial Number”
-          <img alt="Screenshot showing 'verified' selected and '^' icon" src="">
-        </li>
-        <li>Next, select “OK”
-          <img alt="Screenshot highlighting 'OK' button again" src="">
-        </li>
-        <li>Confirm you see a “verified” column
-          <img alt="Screenshot of table with 'verified' column added" src="">
-        </li>
-        <li>Click on the first device on your list (it will be different than what mine is displaying). You can select the device by clicking on the “Asset Tag” number
-          <img alt="Screenshot highlighting an Asset Tag in the table" src="">
-        </li>
-        <li>Confirm you see a page similar to this:
-          <img alt="Screenshot of device details page" src="">
-        </li>
-        <li>Verify all information is correct – do not check the verified box if the information is incorrect.
-          <ol type="a">
-            <li>See slide deck</li>
-            <li>Resources Tab specifically
-              <ol type="i">
-                <li>At minimum: All Groups need to be filled
-                  <ol type="1">
-                    <li>Call out Support Group top right</li>
-                  </ol>
-                </li>
-                <li>Local discretion on specific person, but should be filled in during this lab</li>
-                <li>Ignore Clinical Owner & Managed By & Business Schedule</li>
-                <li>EHRM – Cerner Compatible. If it will someday connect to Cerner, then you should select this</li>
-              </ol>
-            </li>
-          </ol>
-        </li>
-        <li>After verifying correct information, click the “Verified” check box
-          <img alt="Screenshot highlighting 'Verified' checkbox" src="">
-        </li>
-        <li>Then click “update”
-          <img alt="Screenshot highlighting 'Update' button" src="">
-        </li>
-        <li>Awesome, you have just verified a device! Now, this will automatically trigger and Incoming Inspection Work Orders or Preventative Maintenance Work Orders.</li>
-      </ol>
-      <p>A few follow up questions:</p>
-      <ol>
-        <li>What tab could you use in your favorites bar to confirm that you just verified a device?
-          <ol type="a">
-            <li>The “device” tab</li>
-          </ol>
-        </li>
-        <li>What Function could you use to search that same device if you had the asset tag?
-          <ol type="a">
-            <li>Global Search Function</li>
-          </ol>
-        </li>
-      </ol>
-
-      <h3>Part 2: Maintenance Definitions</h3>
-      <p>Let’s talk about maintenance definitions – how to view them, create them, maintain them, and deactivate them. Maintenance definitions are critical for ensuring clinical devices are routinely inspected and maintain compliance.</p>
-      <ol>
-        <li>Let’s create a maintenance definition. Select “All” at the top of your browser (you may also use your Favorites Bar for this step)
-          <img alt="Screenshot of top bar showing 'All'" src="">
-        </li>
-        <li>Search “Maintenance Definitions” in the Search Bar
-          <img alt="Screenshot of search bar with 'Maintenance Definitions'" src="">
-        </li>
-        <li>Select “Maintenance Definitions”
-          <img alt="Screenshot highlighting 'Maintenance Definitions'" src="">
-        </li>
-        <li>Confirm you see the following page with the following pre-set filter:
-          <img alt="Screenshot of Maintenance Definitions page with filter" src="">
-        </li>
-        <li>This page contains a list of all maintenance definitions under the pre-set filter “Facility… is (dynamic)… HTM Manage Devices.” To create a New Maintenance Definition, click “New” in the top right corner of the page
-          <img alt="Screenshot highlighting 'New' button" src="">
-        </li>
-        <li>Confirm you see the following page:
-          <img alt="Screenshot of New Maintenance Definition form" src="">
-        </li>
-        <li>Now I want you to create a maintenance definition for a specific Asset Model in a facility using some parameters listed below:
-          <ol type="a">
-            <li>Name: VISN # - TLA – Risk – Work Order Type – Model Name – Frequency</li>
-            <li>Asset Condition: this sets the criteria for which devices will be covered by the definition – pick something applicable to you or your facility
-              <ol type="i">
-                <li>DO NOT USE “IS” - choose contains, starts with, ends with.</li>
-                <li>IS has to be an exact match</li>
-              </ol>
-            </li>
-            <li>Schedule: the frequency of the definition that will apply to your device(s)</li>
-            <li>Work Order Type: Preventative Maintenance is a good pick here – it makes sense to have a recurring frequency when it is based around PM definitions</li>
-            <li>Generation Type: keep recurring selected – this will create a definition based on the schedule that is applied</li>
-            <li>Work Order Summary: use the same exact thing you used for “Name”</li>
-            <li>Start Date: use the first day of the month for any frequency of monthly or higher per national guidance</li>
-            <li>Maintenance Source: Manufacturer or AEM based on compliance with TJC</li>
-            <li>Facility: used for reporting purposes</li>
-            <li>Asset Type: used for reporting purposes</li>
-            <li>Model: used for reporting purposes</li>
-          </ol>
-        </li>
-        <li>Click Save at the top right when you’re done</li>
-        <li>Once you have clicked “save” you will notice a new option to click “activate.” Click on “activate” once you are ready for the maintenance definition to go live</li>
-        <li>Great! Now you’ve learned how to create maintenance definitions for various devices based on your asset conditions.</li>
-        <li>Now let’s talk about managing these maintenance definitions… does anyone know the two scenarios in which a technician may need to manually generate a PM Work Order form a definition?
-          <ol type="a">
-            <li>New Asset without a matching definition</li>
-            <li>New Activation</li>
-          </ol>
-        </li>
-        <li>To perform this, open an existing maintenance definition. Search “Maintenance Definitions” in your Favorites search bar</li>
-        <li>Select “Maintenance Definitions”
-          <img alt="Screenshot highlighting 'Maintenance Definitions'" src="">
-        </li>
-        <li>Select “New” at the top right of the browser
-          <img alt="Screenshot highlighting 'New'" src="">
-        </li>
-        <li>You will need to create a second maintenance definition for the same asset conditions – but there will be one key difference with this maintenance definition. You want to manually generate a Work Order now... what field will be different than the last maintenance definition we created?</li>
-        <li>If you guessed “Generation Type = Generate Now” then you were correct!
-          <img alt="Screenshot showing Generation Type set to Generate Now" src="">
-        </li>
-        <li>Rather than a recurring set of preventive maintenance Work Orders on a recurring frequency, you will generate a one-time Work Order for the devices covered under your asset conditions.</li>
-        <li>Try it out! Create the same exact Maintenance Definition, but instead of making it a recurring definition, make it a Generate Now definition.</li>
-      </ol>
-    </section>
-
-    <section class="lab-section" data-lab="HTM151: Lab 2">
-      <h2>Lab 6: Scheduling and Rates</h2>
-
-      <h3>Part 1: Technician Schedules</h3>
-      <p>The last thing we will cover in this lab is creating a technician schedule. Each technician should have a main schedule. Let’s walk through the steps of creating a technician schedule.</p>
-      <ol>
-        <li>In your Favorites Search Bar, type “schedule”
-          <img alt="Screenshot of Favorites Search Bar with 'schedule' typed, showing Scheduled Maintenance, Recurrence Frequencies, Maintenance Definitions, Asset Maintenance Instances, Technician Schedule, etc." src="">
-        </li>
-        <li>Select "Technician Schedule"
-          <img alt="Screenshot highlighting 'Technician Schedule' in the list" src="">
-        </li>
-        <li>Confirm you see the following page with the following pre-set filter:
-          <img alt="Screenshot of Technician Schedule page with pre-set filter Active is true" src="">
-        </li>
-        <li>This is a list of all active technicians who have a created technician profile within Nuvolo</li>
-        <li>In the top right of the page, let's click "New" to create a new schedule for a technician
-          <img alt="Screenshot highlighting 'New' button" src="">
-        </li>
-        <li>Confirm you see the following page:
-          <img alt="Screenshot of New Technician Schedule form with fields Name, Technician, Schedule Type, Description" src="">
-        </li>
-        <li>Let's create a new Clinical Technician Schedule using your name:
-          <ol type="a">
-            <li>Name: Your Name</li>
-            <li>Technician: Your Name</li>
-            <li>Schedule Type: Shift</li>
-            <li>Description: VHA HTM Technician Class Test</li>
-          </ol>
-        </li>
-        <li>Now click submit</li>
-        <li>You will be brought back to the list of all Technician Schedules. Using the search bar at the top of the page, search "Riley Brosnan"</li>
-        <li>You should see the schedule you just created at the top of the list:
-          <img alt="Screenshot of search results showing Riley Brosnan schedule" src="">
-        </li>
-        <li>Select “Riley Brosnan” and you should see the following page:
-          <img alt="Screenshot of Riley Brosnan schedule details page" src="">
-        </li>
-        <li>Next, click the tab “schedule entries”
-          <img alt="Screenshot highlighting 'schedule entries' tab" src="">
-        </li>
-        <li>Now click “New” to create a new schedule entry
-          <img alt="Screenshot highlighting 'New' button in schedule entries" src="">
-        </li>
-        <li>Fill out the following fields with the listed parameters
-          <ol type="a">
-            <li>Name: Riley's Monday - Friday</li>
-            <li>Type: -- None --</li>
-            <li>Show as: busy</li>
-            <li>When: Today's Date and the work hours of your technician</li>
-            <li>Repeats: Every Weekday (Mon-Fri)</li>
-            <li>Repeat until: Leave Blank</li>
-            <li>Type: Leave Blank</li>
-          </ol>
-        </li>
-        <li>Click Submit or Update (depending on whether this is a new record or an update to an existing schedule)</li>
-        <li>Now you should see an added schedule entry under the technician's name:
-          <img alt="Screenshot showing added schedule entry" src="">
-        </li>
-        <li>You have now created a regularly scheduled work week for your technician. This is crucial because it will allow your technician to be automatically assigned work orders throughout the week.</li>
-      </ol>
-
-      <h3>Part 2: Rates</h3>
-      <p>Let's make sure you know how to accurately view and update your technician's pay rates within Nuvolo. This ensures proper record keeping to see how much labor cost is being put into specific devices. It will help make decisions on device maintenance and upkeep versus device replacement.</p>
-      <ol>
-        <li>Navigate to your Favorites Bar and search “rates”
-          <img alt="Screenshot of Favorites Search Bar with 'rates' typed" src="">
-        </li>
-        <li>Select “Internal Employee Rates”
-          <img alt="Screenshot highlighting 'Internal Employee Rates'" src="">
-        </li>
-        <li>This page will generate a list of technicians and information like their yearly pay, employee name, facility, locality, GS/step, and more. Let’s click on the filter button in the top left corner of the page
-          <img alt="Screenshot highlighting filter button" src="">
-        </li>
-        <li>Set your filters to any parameter that best helps you – for now, let’s use facility and filter to the Wilmington, DE facility
-          <img alt="Screenshot of filter set to Facility is Wilmington, DE" src="">
-        </li>
-        <li>Now you can see the yearly and hourly labor rate per employee. Again, this is helpful for reporting metrics – you can see how much labor cost goes into specific devices. But let’s say you need to add a new employee and enter their pay rate info. Select “New” at the top right corner of the page.
-          <img alt="Screenshot highlighting 'New' button" src="">
-        </li>
-        <li>Using me again, let’s create an employee rate using the following parameters
-          <ol type="a">
-            <li>Employee: Riley Brosnan (VHAHAMBROSNR)</li>
-            <li>Position Entry Date: Today’s Date</li>
-            <li>Fill in the rest of the information fields with information of your choosing</li>
-            <li>Just note that you do want this information to be as accurate as possible for real-world application – when you make one of these records for an actual technician, ensure the labor rate, yearly pay, facility, locality, Grade, and Step are accurate</li>
-          </ol>
-        </li>
-        <li>Select “Save” or “Update” and you’re good to go!</li>
-      </ol>
-      <p>That probably felt like a lot of information. We discussed a lot of admin responsibilities that will serve you well within Nuvolo. You learned how to create maintenance definitions, view and track employee rates, and create technician schedule entries. These are some core functions that will help you manage a team and devices within Nuvolo.</p>
+    <section class="lab-section" data-lab="Lab 5: Technician Capstone Lab">
+      <h2>Lab 5: Technician Capstone Lab</h2>
+      <p>Congratulations on making it to the final lab of the HTM150 Nuvolo Technician Training! This capstone lab is designed to test your knowledge and skills acquired throughout the previous labs. You will be tasked with a series of challenges that simulate real-world scenarios you may encounter as a technician using Nuvolo. This lab will require you to apply your understanding of work orders, asset management, preventative maintenance, and navigation within the Nuvolo system. Be prepared to demonstrate your proficiency in creating, managing, and resolving work orders, as well as effectively utilizing the asset management features. This capstone lab is not only a test of your technical skills but also an opportunity to showcase your problem-solving abilities and attention to detail. Good luck, and remember to leverage all the tools and knowledge you've gained during this training!</p>
+      <h3>Part 1: Customizing your Navigational Experience</h3>
+      <li>Based on what you've learned in Lab 1, customize your Favorites Bar to match the screenshot below. Change your "Home" to be the HTM Nuvolo User Interface Dashboard.
+        <img src="Lab-Images/Lab5-1.1.png" alt="Screenshot of Favorites Bar showing Home, Clinical Asset Management, Clinical Asset Management Admin, Self-Service - Dashboards, ITIL User Dashboard" style="max-width:100%">
+      </li>
+      <h3>Part 2: Work Order Creation and Management</h3>
+      <li>Create a new Corrective Maintenance Work Order for a hypothetical piece of equipment. Ensure to fill out all required fields and assign the work order to yourself. Once created, change the status of the work order to "In Progress" and then to "Pending Documentation."</li>
+      <li>Fill out the following fields: <br>
+        Work Order Number: <input type="text" name="q1" placeholder="Enter your answer here" style="width: 100%; height: 30px;"> <br>
+        Work Order Type: <input type="text" name="q2" placeholder="Enter your answer here" style="width: 100%; height: 30px;"> <br>
+        Asset Type and #: <input type="text" name="q3" placeholder="Enter your answer here" style="width: 100%; height: 30px;"> <br>
+        Priority Level: <input type="text" name="q4" placeholder="Enter your answer here" style="width: 100%; height: 30px;"> <br>
+        Work Order Summary: <input type="text" name="q2" placeholder="Enter your answer here" style="width: 100%; height: 30px;">
+      </li>
+      <h3>Part 3: Preventative Maintenance Review</h3>
+      <li>Create a Preventative Maintenance Work Order for a hypothetical piece of equipment. Fill out all required fields and assign the work order to yourself. Once created, change the status of the work order to "In Progress" and then to "Pending Documentation."</li>
+      <li>Fill out the following fields: <br>
+        Work Order Number: <input type="text" name="q1" placeholder="Enter your answer here" style="width: 100%; height: 30px;"> <br>
+        Asset Type and #: <input type="text" name="q3" placeholder="Enter your answer here" style="width: 100%; height: 30px;"> <br>
+        Priority Level: <input type="text" name="q4" placeholder="Enter your answer here" style="width: 100%; height: 30px;"> <br>
+        Work Order Summary: <input type="text" name="q2" placeholder="Enter your answer here" style="width: 100%; height: 30px;">
+      </li>
+      <li>Elevate the work order to a Corrective Maintenance Work Order by selecting the appropriate Resolution Code and closing out the PM Work Order.</li>
+      <li>Record the newly created Corrective Maintenance Work Order Number: <input type="text" name="q1" placeholder="Enter your answer here" style="width: 100%; height: 30px;"></li>
+      <h3>Part 4: Scavenger Hunt</h3>
+      <li> What is the link for YourHTM (Nuvolo) SharePoint site? <input type="text" name="q1" placeholder="Enter your answer here" style="width: 100%; height: 30px;"></li>
+      <li> Who is your BESM VISN HTM Lead or Leads? <input type="text" name="q2" placeholder="Enter your answer here" style="width: 100%; height: 30px;"></li>
+      <li> Where can you find Nuvolo Knowledge Articles? <input type="text" name="q3" placeholder="Enter your answer here" style="width: 100%; height: 30px;"></li>
+      <li> What is the link for HTM Nuvolo Release Notices? <input type="text" name="q4" placeholder="Enter your answer here" style="width: 100%; height: 30px;"></li>
     </section>
   </main>
 
