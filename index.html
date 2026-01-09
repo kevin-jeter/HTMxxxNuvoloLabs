@@ -33,6 +33,19 @@
       --table-head-bg: #3a3d41;
       --table-alt-row-bg: #2a2d31;
       --image-border: #444;
+      h1, h2, h3 {
+        color: var(--accent);
+      }
+      .callout {
+        border-left-color: var(--accent);
+      }
+      .theme-switch input:checked + .slider {
+        background-color: var(--accent);
+      }
+      input::placeholder,
+      select::placeholder {
+        color: #cccccc;
+      }
     }
 
     body {
@@ -663,4 +676,5 @@
     });
   </script>
 </body>
+
 </html>
